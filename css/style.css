@@ -101,14 +101,14 @@ h2 {
 
 #home header > h1 {
   position: absolute;
-  left: 0;
+  left: 10px;
   bottom: 55.5%;
   margin: 0;
 }
 
 #home header > p {
   position: absolute;
-  left: 0;
+  left: 12px;
   top: 44.5%;
   font-size: 1.4em;
   letter-spacing: -0.015em;
@@ -117,7 +117,7 @@ h2 {
 
 #home header > span {
   position: absolute;
-  left: 0;
+  left: 14px;
   top: 54.5%;
   font-size: 0.7em;
   letter-spacing: -0.015em;
@@ -131,7 +131,7 @@ textarea,
 select {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 300;
-  color: #777777;
+  color: #525252;
 }
 
 h1,
