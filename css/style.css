@@ -173,7 +173,7 @@ article:last-child {
 #nav a {
   position: relative;
   display: inline-block;
-  color: #717171;
+  color: #66696D; /* #717171; */
   width: 1em;
   height: 1em;
   line-height: 1em;
