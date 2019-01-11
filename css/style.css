@@ -174,9 +174,9 @@ article:last-child {
   position: relative;
   display: inline-block;
   color: #717171;
-  width: 1em;
+  width: 1.2em;
   height: 1em;
-  line-height: 0.9em;
+  line-height: 1.4em;
   -webkit-transition: -webkit-transform 0.3s;
   -moz-transition: -moz-transform 0.3s;
   -ms-transition: -ms-transform 0.3s;
