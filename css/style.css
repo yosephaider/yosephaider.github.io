@@ -209,3 +209,16 @@ article:last-child {
   -ms-transform: scale(1.1);
   transform: scale(1.1);
 }
+
+@media only screen and (max-device-width: 480px){
+
+  body {
+    display: inline-flex;
+    margin-top: 6em;
+  }
+  #nav a {
+    font-size: 4.5em;
+  }
+
+}
+
