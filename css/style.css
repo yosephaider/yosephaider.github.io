@@ -214,12 +214,12 @@ article:last-child {
 }
 
 @media only screen and (max-device-width: 480px){
-
+/*
   body {
     display: inline-flex;
     margin-top: 6em;
   }
-
+*/
   #main {
     display: none;
   }
