@@ -230,13 +230,14 @@ article:last-child {
     display: none;
   }
   
-  #home header {
+  #movil {
+    display: block;
+    margin-top: 4em;
     text-align: center;
   }
   
-  #home .pic {
-    
-  
+  #home .pic img{
+    margin: 0 auto;  
   }
 
 }
