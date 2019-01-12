@@ -214,12 +214,6 @@ article:last-child {
 }
 
 @media only screen and (max-device-width: 480px){
-/*
-  body {
-    display: inline-flex;
-    margin-top: 6em;
-  }
-*/
   #main {
     display: none;
   }
@@ -254,6 +248,5 @@ article:last-child {
     font-size: 1.2em;
     line-height: 1.8em;
   }
-
 }
 
