@@ -218,6 +218,10 @@ article:last-child {
   }
   #nav a {
     font-size: 4.5em;
+    opacity: 0.55;
+  }
+  #main {
+    margin-top: 3em;
   }
 
 }
