@@ -219,16 +219,11 @@ article:last-child {
     display: inline-flex;
     margin-top: 6em;
   }
-  
-  #nav a {
-    font-size: 4.8em;
-    opacity: 0.55;
-  }
-  
+
   #main {
     display: none;
   }
-  
+
   #movil {
     display: block;
     margin-top: 3em;
@@ -239,18 +234,10 @@ article:last-child {
     background: #ffffff;
     box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .2), 0 1px 1px 0 rgba(0, 0, 0, .14), 0 2px 1px -1px rgba(0, 0, 0, .12);
   }
-  
-  #movil:before,
-  #movil:after {
-    position: absolute;
-    content: "";
-    top: 250px;
-    bottom: 1085px;
-    left: 210px;
-    right: 210px;
-    z-index: -1;
-    box-shadow: 0 0 30px 13px #5c5f61;
-    border-radius: 100px/5px;
+
+  #nav a {
+    font-size: 4.8em;
+    opacity: 0.55;
   }
 
   #movil header > h1 {
