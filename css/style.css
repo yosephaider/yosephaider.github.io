@@ -120,7 +120,6 @@ h2 {
   left: 14px;
   top: 54.5%;
   font-size: 0.7em;
-  letter-spacing: -0.015em;
   line-height: 1.6em;
   margin-top: 0;
 }
@@ -258,7 +257,9 @@ article:last-child {
   }
 
   #movil header > p {
-    font-size: 1.8em;
+    font-size: 2.2em;
+    margin-top: -0.6em;
+    margin-bottom: 0.4em;
   }
 
   #movil header > span {
