@@ -37,6 +37,7 @@ h2 {
 }
 
 #nav {
+  display: none;
   text-align: center;
   height: 4.25em;
 }
@@ -251,6 +252,10 @@ article:last-child {
 }
 
 @media only screen and (max-device-width: 480px){
+  #nav {
+    display: block;
+  }
+  
   #main {
     display: none;
   }
