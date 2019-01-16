@@ -143,7 +143,6 @@ h2 {
   display: block;
   line-height: 1.5em;
   outline: 0;
-  opacity: 0.50;
   -moz-transition: opacity 0.25s ease-in-out;
   -webkit-transition: opacity 0.25s ease-in-out;
   -o-transition: opacity 0.25s ease-in-out;
@@ -156,7 +155,7 @@ h2 {
 }
 
 .menu-left a:hover {
-  opacity: 1;
+  opacity: 0.50;
 }
 
 
