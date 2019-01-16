@@ -11,7 +11,7 @@ body {
   flex-direction: column;
   justify-content: center;
   user-select: none;
-  background-color: #f7f7f7;
+  background-color: #ebeae8; /*#f7f7f7;*/
 }
 
 body,
@@ -33,7 +33,7 @@ h2 {
 
 #wrapper {
   margin: 0 auto;
-  margin-top: -50px;
+  /*margin-top: -50px;*/
 }
 
 #nav {
@@ -130,7 +130,7 @@ textarea,
 select {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 300;
-  color: #505050;
+  color: #70727d; /*#505050;*/
 }
 
 h1,
@@ -140,7 +140,7 @@ h4,
 h5,
 h6 {
   font-weight: 400;
-  color: #252525;
+  color: #60636f; /*#252525;*/
 }
 
 article {
