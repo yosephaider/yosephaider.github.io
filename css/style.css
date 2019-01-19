@@ -92,7 +92,6 @@ h2 {
   display: block;
   height: 80%;
   border-radius: 10px;
-  
 }
 
 #home header {
@@ -289,6 +288,11 @@ article:last-child {
   #movil header > span {
     font-size: 1.2em;
     line-height: 1.8em;
+  }
+
+  #movil .pic img {
+  border-radius: 20px;
+  margin-top: 2em;
   }
 }
 
