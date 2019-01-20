@@ -1,7 +1,7 @@
 # Yosephaider Vanegas Q. @ GitHub
 Open Source at `GitHub` → [https://yosephaider.github.io](https://yosephaider.github.io)
 
-* System Requirements:
+* _System Requirements_:
 
 ```json
   {
