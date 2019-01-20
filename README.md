@@ -1,3 +1,7 @@
+---
+permalink: /index.html
+---
+
 # Yosephaider Vanegas Q. @ GitHub
 Open Source at `GitHub` → [https://yosephaider.github.io](https://yosephaider.github.io)
 
