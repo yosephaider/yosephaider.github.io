@@ -1,0 +1,17 @@
+# Permalinks
+permalink:        pretty
+
+# Setup
+title:            Yosephaider vanegas
+tagline:          'Software Developer'
+description:      'Developer in Mérida, VE'
+url:              https://yosephaider.github.io
+baseurl:          /
+
+author:
+  name:           'Yosephaider Vanegas'
+  url:            https://twitter.com/yosephaider
+
+github:
+  repo:           https://github.com/yisephaider/yosephaider.github.io
+
