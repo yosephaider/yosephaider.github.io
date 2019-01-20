@@ -226,7 +226,7 @@ article:last-child {
 }
 
 .panel:before,
-.panel:after{
+.panel:after {
   position: absolute;
   content: "";
   top: 100px;
