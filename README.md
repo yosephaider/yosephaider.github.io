@@ -5,8 +5,8 @@ Open Source at `GitHub` → [https://yosephaider.github.io](https://yosephaider.
 
 ```json
   {
-      "name": "Yosephaider Vanegas Q.",
-      "type": "Personal Page"
+    "name": "Yosephaider Vanegas Q.",
+    "type": "Personal Page"
   }
 ```
 
