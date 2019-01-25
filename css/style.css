@@ -168,7 +168,7 @@ textarea,
 select {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 300;
-  color: #70727d; /*#505050;*/
+  color: #70727d;
 }
 
 h1,
@@ -178,7 +178,7 @@ h4,
 h5,
 h6 {
   font-weight: 400;
-  color: #60636f; /*#252525;*/
+  color: #60636f;
 }
 
 article {
