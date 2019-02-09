@@ -105,14 +105,14 @@ h2 {
 #home header > h1 {
   position: absolute;
   left: 10px;
-  bottom: 55.5%;
+  bottom: 50.5%;
   margin: 0;
 }
 
 #home header > p {
   position: absolute;
   left: 12px;
-  top: 44.5%;
+  top: 49.5%;
   font-size: 1.4em;
   letter-spacing: -0.015em;
   margin-top: 0;
@@ -122,8 +122,8 @@ h2 {
   color: #808080;
   position: absolute;
   left: 14px;
-  top: 54.5%;
-  font-size: 0.7em;
+  top: 58.5%;
+  font-size: 0.75em;
   line-height: 1.6em;
   margin-top: 0;
 }
