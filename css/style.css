@@ -267,7 +267,7 @@ article:last-child {
   }
 
   #nav a {
-    width: 1.4em;
+    width: 1.3em;
     font-size: 5.8em;
     opacity: 0.55;
   }
@@ -288,8 +288,8 @@ article:last-child {
 
   #movil .pic img {
     border-radius: 20px;
-    margin-top: 2em;
-    width: 90%;
+    margin-top: 3em;
+    width: 85%;
   }
 }
 
