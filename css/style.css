@@ -12,7 +12,7 @@ body {
   flex-direction: column;
   justify-content: center;
   user-select: none;
-  background-color: #ccc;
+  background-color: #fff;
 }
 
 body,
@@ -221,7 +221,7 @@ article:last-child {
 
 .panel {
   position: relative;
-  background: #ffffff;
+  background: #f0f0f0;
 }
 
 .panel:before,
