@@ -76,7 +76,7 @@ h2 {
 
 #home .pic {
   position: absolute;
-  right: 20px;
+  right: 15px;
   top: 0;
   height: 100%;
   text-decoration: none;
@@ -88,7 +88,7 @@ h2 {
 #home .pic img {
   position: relative;
   display: block;
-  height: 89%;
+  height: 91%;
   border-radius: 10px;
 }
 
