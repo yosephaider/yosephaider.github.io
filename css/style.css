@@ -106,12 +106,13 @@ h2 {
   left: 10px;
   bottom: 50.5%;
   margin: 0;
+  font-weight: 500;
 }
 
 #home header > p {
   position: absolute;
   left: 12px;
-  top: 49.5%;
+  top: 49%;
   font-size: 1.4em;
   letter-spacing: -0.015em;
   margin-top: 0;
@@ -125,6 +126,7 @@ h2 {
   font-size: 0.75em;
   line-height: 1.6em;
   margin-top: 0;
+  font-weight: 400;
 }
 
 #home .menu-left {
@@ -165,7 +167,7 @@ body,
 input,
 textarea,
 select {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 300;
   color: #70727d;
 }
@@ -177,7 +179,7 @@ h4,
 h5,
 h6 {
   font-weight: 400;
-  color: #60636f;
+  color: #797c8c;
 }
 
 article {
