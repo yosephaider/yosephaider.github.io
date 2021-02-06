@@ -268,7 +268,7 @@ article:last-child {
     padding-bottom: 2em;
     text-align: center;
     border-radius: 0 0 30px 30px;
-    background: #ffffff;
+    background: #ff4c29 !important;
   }
 
   #nav a {
