@@ -129,7 +129,7 @@ h2 {
 }
 
 #home .menu-left {
-  background-color: #797c8c;
+  background-color: #1b1e2d;
   width: 12%;
   text-align: center;
   height: 100%;
@@ -168,7 +168,7 @@ textarea,
 select {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
-  color: #70727d;
+  color: #f7c9c9;
 }
 
 h1,
@@ -178,7 +178,7 @@ h4,
 h5,
 h6 {
   font-weight: 400;
-  color: #797c8c;
+  color: #f7c9c9;
 }
 
 article {
@@ -222,7 +222,8 @@ article:last-child {
 
 .panel {
   position: relative;
-  background: #f3f3f3;
+  background: #ff4c29 !important;
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, .14) 0 7px 10px -5px rgba(233, 30, 99, .4);
 }
 
 .panel:before,
