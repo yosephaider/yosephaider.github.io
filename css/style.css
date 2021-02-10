@@ -110,7 +110,7 @@ h2 {
   bottom: 50.5%;
   margin: 0;
   font-weight: bolder;
-  text-shadow: #9d1709 1px 1px 0;
+  text-shadow: #15132d 1px 1px 0;
 }
 
 #home header > p {
@@ -120,7 +120,7 @@ h2 {
   font-size: 1.4em;
   letter-spacing: -0.015em;
   margin-top: 0;
-  text-shadow: #9d1709 1px 1px 0;
+  text-shadow: #15132d 1px 1px 0;
 }
 
 #home header > span {
@@ -131,25 +131,24 @@ h2 {
   line-height: 1.6em;
   margin-top: 0;
   font-weight: 400;
-  text-shadow: #9d1709 1px 1px 0;
+  text-shadow: #15132d 1px 1px 0;
 }
 
 #home .menu-left {
-  background-color: transparent;
-  width: 12%;
+  background-color: #746f82;
+  width: 12.5%;
   text-align: center;
   height: 100%;
   border-radius: 10px 0 0 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border-right: 1px solid #ececec;
   margin: 3px 0;
 }
 
 .menu-left a {
   font-size: 2.4em;
-  color: #858488;
+  color: #746f82;
   position: relative;
   display: block;
   line-height: 1.52em;
@@ -160,11 +159,11 @@ h2 {
   -o-transition: opacity 0.25s ease-in-out;
   -ms-transition: opacity 0.25s ease-in-out;
   transition: opacity 0.25s ease-in-out;
-  background-color: #242331 !important;
+  background-color: #373440 !important;
   border-radius: 9px;
   margin: 9px 10px;
   width: 68px;
-  left: 7px
+  left: 9.5px
 }
 
 .menu-left a:before {
@@ -235,8 +234,8 @@ article:last-child {
 
 .panel {
   position: relative;
-  background: #ff4c29 !important;
-  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, .14), 0 7px 10px -5px rgba(233, 30, 99, .4);
+  background: #5c5c71 !important;
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, .14), 0 7px 10px -5px rgba(4, 4, 4, 0.4);
 }
 
 .panel:before,
