@@ -180,7 +180,7 @@ textarea,
 select {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
-  color: #f7c9c9;
+  color: #fff;
 }
 
 h1,
@@ -190,7 +190,7 @@ h4,
 h5,
 h6 {
   font-weight: 400;
-  color: #f7c9c9;
+  color: #fff;
 }
 
 article {
