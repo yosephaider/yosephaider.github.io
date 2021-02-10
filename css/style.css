@@ -132,7 +132,7 @@ h2 {
 }
 
 #home .menu-left {
-  background-color: #1b1e2d;
+  background-color: transparent;
   width: 12%;
   text-align: center;
   height: 100%;
@@ -140,21 +140,28 @@ h2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  border-right: 1px solid #ececec;
+  margin: 3px 0;
 }
 
 .menu-left a {
   font-size: 2.4em;
-  color: #fff;
+  color: #858488;
   position: relative;
   display: block;
   line-height: 1.8em;
   outline: 0;
-  opacity: 0.80;
+  opacity: 1;
   -moz-transition: opacity 0.25s ease-in-out;
   -webkit-transition: opacity 0.25s ease-in-out;
   -o-transition: opacity 0.25s ease-in-out;
   -ms-transition: opacity 0.25s ease-in-out;
   transition: opacity 0.25s ease-in-out;
+  background-color: #242331 !important;
+  border-radius: 9px;
+  margin: 9px 10px;
+  width: 68px;
+  left: 7px
 }
 
 .menu-left a:before {
