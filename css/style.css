@@ -110,6 +110,7 @@ h2 {
   bottom: 50.5%;
   margin: 0;
   font-weight: bolder;
+  text-shadow: #9d1709 1px 1px 0;
 }
 
 #home header > p {
@@ -119,6 +120,7 @@ h2 {
   font-size: 1.4em;
   letter-spacing: -0.015em;
   margin-top: 0;
+  text-shadow: #9d1709 1px 1px 0;
 }
 
 #home header > span {
