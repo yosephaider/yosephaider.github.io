@@ -117,7 +117,7 @@ h2 {
   position: absolute;
   left: 12px;
   top: 49%;
-  font-size: 1.4em;
+  font-size: 1em;
   letter-spacing: -0.015em;
   margin-top: 0;
   text-shadow: #15132d 1px 1px 0;
@@ -160,7 +160,7 @@ h2 {
   -ms-transition: opacity 0.25s ease-in-out;
   transition: opacity 0.25s ease-in-out;
   background-color: #373440 !important;
-  border-radius: 9px;
+  border-radius: 10px;
   margin: 9px 10px;
   width: 68px;
   left: 9.5px
