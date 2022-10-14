@@ -116,7 +116,7 @@ h2 {
 #home header > p {
   position: absolute;
   left: 12px;
-  top: 49%;
+  top: 50%;
   font-size: 1em;
   letter-spacing: -0.015em;
   margin-top: 0;
@@ -126,7 +126,7 @@ h2 {
 #home header > span {
   position: absolute;
   left: 14px;
-  top: 58.5%;
+  top: 57%;
   font-size: 0.75em;
   line-height: 1.6em;
   margin-top: 0;
