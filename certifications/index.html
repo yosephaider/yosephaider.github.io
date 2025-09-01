@@ -46,7 +46,7 @@
         }
 
         .stats-bar {
-            background: #f9f9f9;
+            background: #fff;
             padding: 20px 40px;
             border-bottom: 1px solid #e2e8f0;
             display: flex;
@@ -83,11 +83,11 @@
         }
 
         .filter-btn {
-            background: #f3f5f7;
+            background: #fff;
             border: 1px solid #e2e8f0;
             color: #555;
-            padding: 6px 18px;
-            border-radius: 4px;
+            padding: 4px 16px;
+            border-radius: 6px;
             cursor: pointer;
             font-size: 14px;
             transition: all 0.2s;
@@ -156,15 +156,21 @@
         .cert-info {
             display: flex;
             flex-direction: column;
-            gap: 4px;
+            gap: 1px;
             min-width: 0;
         }
 
         .cert-name {
-            font-size: 14px;
-            font-weight: 500;
-            color: #1a202c;
-            line-height: 1.4;
+            font-size: 15px;
+            font-weight: 400;
+            color: #141518;
+            line-height: 0.8;
+        }
+
+
+        .cert-desc {
+            background-color: transparent;
+            line-height: 1;
         }
 
         .cert-org {
@@ -174,9 +180,22 @@
 
         .cert-date {
             font-size: 13px;
-            color: #5c6777;
+            color: #6a6e75;
             text-align: right;
             white-space: nowrap;
+            margin-left: 8px;
+        }
+
+        .cert-date > i {
+            position: relative;
+            top: 3px;
+            font-size: 18px;
+            margin: 0 4px 0 6px;
+        }
+        
+        .cert-date::before {
+            content: '\2014';
+            position: relative;
         }
 
         .cert-co {
@@ -429,9 +448,9 @@
                         <div class="cert-icon"></div>
                         <div class="cert-info">
                             <div class="cert-name">Python Programming Course</div>
-                            <div class="cert-org">Platzi</div>
+                            <div class="cert-desc"><span class="cert-org">Platzi</span><span class="cert-date"><i class="ph ph-calendar-dots"></i>Dec 2019</span></div>
                         </div>
-                        <div class="cert-date">Dec 2019</div>
+                        <!-- <div class="cert-date">Mar 2016</div> -->
                         <div class="cert-actions">
                             <button class="action-btn" onclick="viewCertificate('Python Programming Course', 'Platzi', 'Dec 2019')" title="View Certificate"><i class="ph ph-seal-check"></i></button>
                         </div>
@@ -441,9 +460,8 @@
                         <div class="cert-icon"></div>
                         <div class="cert-info">
                             <div class="cert-name">Introduction to PHP</div>
-                            <div class="cert-org">Platzi</div>
+                            <div class="cert-desc"><span class="cert-org">Platzi</span><span class="cert-date"><i class="ph ph-calendar-dots"></i>Dec 2019</span></div>
                         </div>
-                        <div class="cert-date">Dec 2019</div>
                         <div class="cert-actions">
                             <button class="action-btn" onclick="viewCertificate('Introduction to PHP', 'Platzi', 'Dec 2019')" title="View Certificate"><i class="ph ph-seal-check"></i></button>
                         </div>
@@ -452,9 +470,8 @@
                         <div class="cert-icon"></div>
                         <div class="cert-info">
                             <div class="cert-name">Introduction to C Programming</div>
-                            <div class="cert-org">Platzi</div>
+                            <div class="cert-desc"><span class="cert-org">Platzi</span><span class="cert-date"><i class="ph ph-calendar-dots"></i>Jun 2020</span></div>
                         </div>
-                        <div class="cert-date">Jun 2020</div>
                         <div class="cert-actions">
                             <button class="action-btn" onclick="viewCertificate('Introduction to C Programming', 'Platzi', 'Jun 2020')" title="View Certificate"><i class="ph ph-seal-check"></i></button>
                         </div>
@@ -463,9 +480,8 @@
                         <div class="cert-icon"></div>
                         <div class="cert-info">
                             <div class="cert-name">Introduction to C 2019 Programming</div>
-                            <div class="cert-org">Platzi</div>
+                            <div class="cert-desc"><span class="cert-org">Platzi</span><span class="cert-date"><i class="ph ph-calendar-dots"></i>Sep 2020</span></div>
                         </div>
-                        <div class="cert-date">Sep 2020</div>
                         <div class="cert-actions">
                             <button class="action-btn" onclick="viewCertificate('Introduction to C 2019 Programming', 'Platzi', 'Sep 2020')" title="View Certificate"><i class="ph ph-seal-check"></i></button>
                         </div>
@@ -474,9 +490,8 @@
                         <div class="cert-icon"></div>
                         <div class="cert-info">
                             <div class="cert-name">Introduction to C++ Programming</div>
-                            <div class="cert-org">Platzi</div>
+                            <div class="cert-desc"><span class="cert-org">Platzi</span><span class="cert-date"><i class="ph ph-calendar-dots"></i>Sep 2020</span></div>
                         </div>
-                        <div class="cert-date">Sep 2020</div>
                         <div class="cert-actions">
                             <button class="action-btn" onclick="viewCertificate('Introduction to C++ Programming', 'Platzi', 'Sep 2020')" title="View Certificate"><i class="ph ph-seal-check"></i></button>
                         </div>
@@ -485,9 +500,8 @@
                         <div class="cert-icon"></div>
                         <div class="cert-info">
                             <div class="cert-name">Java Fundamentals Diploma</div>
-                            <div class="cert-org">Comfenalco Santander University Foundation</div>
+                            <div class="cert-desc"><span class="cert-org">Comfenalco Santander University Foundation</span><span class="cert-date"><i class="ph ph-calendar-dots"></i>Feb 2021</span></div>
                         </div>
-                        <div class="cert-date">Feb 2021</div>
                         <div class="cert-actions">
                             <button class="action-btn" onclick="viewCertificate('Java Fundamentals Diploma', 'Comfenalco Santander University Foundation', 'Feb 2021')" title="View Certificate"><i class="ph ph-seal-check"></i></button>
                         </div>
@@ -496,9 +510,8 @@
                         <div class="cert-icon"></div>
                         <div class="cert-info">
                             <div class="cert-name">Python Programming</div>
-                            <div class="cert-org">Free Software Academy (Fundacite Mérida)</div>
+                            <div class="cert-desc"><span class="cert-org">Free Software Academy (Fundacite Mérida)</span><span class="cert-date"><i class="ph ph-calendar-dots"></i>Jul 2008</span></div>
                         </div>
-                        <div class="cert-date">Jul 2008</div>
                         <div class="cert-actions">
                             <button class="action-btn" onclick="viewCertificate('Python Programming', 'Free Software Academy', 'Jul 2008')" title="View Certificate"><i class="ph ph-seal-check"></i></button>
                         </div>
@@ -507,9 +520,8 @@
                         <div class="cert-icon"></div>
                         <div class="cert-info">
                             <div class="cert-name">XHTML - XML - CSS</div>
-                            <div class="cert-org">Free Software Academy (Fundacite Mérida)</div>
+                            <div class="cert-desc"><span class="cert-org">Free Software Academy (Fundacite Mérida)</span><span class="cert-date"><i class="ph ph-calendar-dots"></i>Jul 2008</span></div>
                         </div>
-                        <div class="cert-date">Jul 2008</div>
                         <div class="cert-actions">
                             <button class="action-btn" onclick="viewCertificate('XHTML - XML - CSS', 'Free Software Academy', 'Jul 2008')" title="View Certificate"><i class="ph ph-seal-check"></i></button>
                         </div>
@@ -518,9 +530,8 @@
                         <div class="cert-icon"></div>
                         <div class="cert-info">
                             <div class="cert-name">C++ Programming in Microcontrollers and Arduino</div>
-                            <div class="cert-org">Comfenalco Santander University Foundation</div>
+                            <div class="cert-desc"><span class="cert-org">Comfenalco Santander University Foundation</span><span class="cert-date"><i class="ph ph-calendar-dots"></i>Aug 2021</span></div>
                         </div>
-                        <div class="cert-date">Aug 2021</div>
                         <div class="cert-actions">
                             <button class="action-btn" onclick="viewCertificate('C++ Programming in Microcontrollers and Arduino', 'Comfenalco Santander', 'Aug 2021')" title="View Certificate"><i class="ph ph-seal-check"></i></button>
                         </div>
@@ -536,9 +547,8 @@
                         <div class="cert-icon"></div>
                         <div class="cert-info">
                             <div class="cert-name">CentOS and Red Hat Linux to Certified System Administrator</div>
-                            <div class="cert-org">Udemy</div>
+                            <div class="cert-desc"><span class="cert-org">Udemy</span><span class="cert-date"><i class="ph ph-calendar-dots"></i>Jan 2017</span></div>
                         </div>
-                        <div class="cert-date">Jan 2017</div>
                         <div class="cert-actions">
                             <button class="action-btn" onclick="viewCertificate('CentOS and Red Hat Linux to Certified System Administrator', 'Udemy', 'Jan 2017')" title="View Certificate"><i class="ph ph-seal-check"></i></button>
                         </div>
@@ -547,9 +557,8 @@
                         <div class="cert-icon"></div>
                         <div class="cert-info">
                             <div class="cert-name">Cybersecurity Awareness Training</div>
-                            <div class="cert-org">Amazon</div>
+                            <div class="cert-desc"><span class="cert-org">Amazon</span><span class="cert-date"><i class="ph ph-calendar-dots"></i>Oct 2021</span></div>
                         </div>
-                        <div class="cert-date">Oct 2021</div>
                         <div class="cert-actions">
                             <button class="action-btn" onclick="viewCertificate('Cybersecurity Awareness Training', 'Amazon', 'Oct 2021')" title="View Certificate"><i class="ph ph-seal-check"></i></button>
                         </div>
@@ -558,9 +567,8 @@
                         <div class="cert-icon"></div>
                         <div class="cert-info">
                             <div class="cert-name">AWS Cloud Practitioner</div>
-                            <div class="cert-org">Intelligent Training</div>
+                            <div class="cert-desc"><span class="cert-org">Intelligent Training</span><span class="cert-date"><i class="ph ph-calendar-dots"></i>Mar 2024</span></div>
                         </div>
-                        <div class="cert-date">Mar 2024</div>
                         <div class="cert-actions">
                             <button class="action-btn" onclick="viewCertificate('AWS Cloud Practitioner', 'Intelligent Training', 'Mar 2024')" title="View Certificate"><i class="ph ph-seal-check"></i></button>
                         </div>
@@ -569,9 +577,8 @@
                         <div class="cert-icon"></div>
                         <div class="cert-info">
                             <div class="cert-name">AI-050: Developing Generative AI Solutions with Azure OpenAI Service</div>
-                            <div class="cert-org">Intelligent Training</div>
+                            <div class="cert-desc"><span class="cert-org">Intelligent Training</span><span class="cert-date"><i class="ph ph-calendar-dots"></i>Sep 2023</span></div>
                         </div>
-                        <div class="cert-date">Sep 2023</div>
                         <div class="cert-actions">
                             <button class="action-btn" onclick="viewCertificate('AI-050: Developing Generative AI Solutions with Azure OpenAI Service', 'Intelligent Training', 'Sep 2023')" title="View Certificate"><i class="ph ph-seal-check"></i></button>
                         </div>
@@ -581,9 +588,8 @@
                         <div class="cert-icon"></div>
                         <div class="cert-info">
                             <div class="cert-name">AZ-900: Microsoft Azure Fundamentals</div>
-                            <div class="cert-org">Intelligent Training</div>
+                            <div class="cert-desc"><span class="cert-org">Intelligent Training</span><span class="cert-date"><i class="ph ph-calendar-dots"></i>Aug 2025</span></div>
                         </div>
-                        <div class="cert-date">Aug 2025</div>
                         <div class="cert-actions">
                             <button class="action-btn" onclick="viewCertificate('AZ-900: Microsoft Azure Fundamentals', 'Intelligent Training', 'Aug 2025')" title="View Certificate"><i class="ph ph-seal-check"></i></button>
                         </div>
@@ -592,9 +598,8 @@
                         <div class="cert-icon"></div>
                         <div class="cert-info">
                             <div class="cert-name">WORKSHOP: Monitoring Your Kubernetes Cluster with Datadog</div>
-                            <div class="cert-org">Datadog</div>
+                            <div class="cert-desc"><span class="cert-org">Datadog</span><span class="cert-date"><i class="ph ph-calendar-dots"></i>Jul 2025</span></div>
                         </div>
-                        <div class="cert-date">Jul 2025</div>
                         <div class="cert-actions">
                             <button class="action-btn" onclick="viewCertificate('WORKSHOP: Monitoring Your Kubernetes Cluster with Datadog', 'Datadog', 'Jul 2025')" title="View Certificate"><i class="ph ph-seal-check"></i></button>
                         </div>
@@ -603,9 +608,8 @@
                         <div class="cert-icon"></div>
                         <div class="cert-info">
                             <div class="cert-name">Linux Unhatched</div>
-                            <div class="cert-org">Cisco Networking Academy</div>
+                            <div class="cert-desc"><span class="cert-org">Cisco Networking Academy</span><span class="cert-date"><i class="ph ph-calendar-dots"></i>Jan 2025</span></div>
                         </div>
-                        <div class="cert-date">Jan 2025</div>
                         <div class="cert-actions">
                             <button class="action-btn" onclick="viewCertificate('Linux Unhatched', 'Cisco Networking Academy', 'Jan 2025')" title="View Certificate"><i class="ph ph-seal-check"></i></button>
                         </div>
@@ -614,9 +618,8 @@
                         <div class="cert-icon"></div>
                         <div class="cert-info">
                             <div class="cert-name">AWS SysOps Administrator</div>
-                            <div class="cert-org">CerTI+</div>
+                            <div class="cert-desc"><span class="cert-org">CerTI+</span><span class="cert-date"><i class="ph ph-calendar-dots"></i>Apr 2025</span></div>
                         </div>
-                        <div class="cert-date">Apr 2025</div>
                         <div class="cert-actions">
                             <button class="action-btn" onclick="viewCertificate('AWS SysOps Administrator', 'CerTI+', 'Apr 2025')" title="View Certificate"><i class="ph ph-seal-check"></i></button>
                         </div>
@@ -632,9 +635,8 @@
                         <div class="cert-icon"></div>
                         <div class="cert-info">
                             <div class="cert-name">Introduction to R Course</div>
-                            <div class="cert-org">DataCamp</div>
+                            <div class="cert-desc"><span class="cert-org">DataCamp</span><span class="cert-date"><i class="ph ph-calendar-dots"></i>Nov 2018</span></div>
                         </div>
-                        <div class="cert-date">Nov 2018</div>
                         <div class="cert-actions">
                             <button class="action-btn" onclick="viewCertificate('Introduction to R Course', 'DataCamp', 'Nov 2018')" title="View Certificate"><i class="ph ph-seal-check"></i></button>
                         </div>
@@ -643,9 +645,8 @@
                         <div class="cert-icon"></div>
                         <div class="cert-info">
                             <div class="cert-name">Intermediate R Course</div>
-                            <div class="cert-org">DataCamp</div>
+                            <div class="cert-desc"><span class="cert-org">DataCamp</span><span class="cert-date"><i class="ph ph-calendar-dots"></i>Nov 2018</span></div>
                         </div>
-                        <div class="cert-date">Nov 2018</div>
                         <div class="cert-actions">
                             <button class="action-btn" onclick="viewCertificate('Intermediate R Course', 'DataCamp', 'Nov 2018')" title="View Certificate"><i class="ph ph-seal-check"></i></button>
                         </div>
@@ -654,9 +655,8 @@
                         <div class="cert-icon"></div>
                         <div class="cert-info">
                             <div class="cert-name">Writing Functions in R Course</div>
-                            <div class="cert-org">DataCamp</div>
+                            <div class="cert-desc"><span class="cert-org">DataCamp</span><span class="cert-date"><i class="ph ph-calendar-dots"></i>Nov 2018</span></div>
                         </div>
-                        <div class="cert-date">Nov 2018</div>
                         <div class="cert-actions">
                             <button class="action-btn" onclick="viewCertificate('Writing Functions in R Course', 'DataCamp', 'Nov 2018')" title="View Certificate"><i class="ph ph-seal-check"></i></button>
                         </div>
@@ -665,9 +665,8 @@
                         <div class="cert-icon"></div>
                         <div class="cert-info">
                             <div class="cert-name">Reporting with R Markdown Course</div>
-                            <div class="cert-org">DataCamp</div>
+                            <div class="cert-desc"><span class="cert-org">DataCamp</span><span class="cert-date"><i class="ph ph-calendar-dots"></i>Nov 2018</span></div>
                         </div>
-                        <div class="cert-date">Nov 2018</div>
                         <div class="cert-actions">
                             <button class="action-btn" onclick="viewCertificate('Reporting with R Markdown Course', 'DataCamp', 'Nov 2018')" title="View Certificate"><i class="ph ph-seal-check"></i></button>
                         </div>
@@ -683,9 +682,8 @@
                         <div class="cert-icon"></div>
                         <div class="cert-info">
                             <div class="cert-name">Web Assistant</div>
-                            <div class="cert-org">Get Trained for Employment (Carlos Slim Foundation)</div>
+                            <div class="cert-desc"><span class="cert-org">Get Trained for Employment (Carlos Slim Foundation)</span><span class="cert-date"><i class="ph ph-calendar-dots"></i>Apr 2016</span></div>
                         </div>
-                        <div class="cert-date">Apr 2016</div>
                         <div class="cert-actions">
                             <button class="action-btn" onclick="viewCertificate('Web Assistant', 'Carlos Slim Foundation', 'Apr 2016')" title="View Certificate"><i class="ph ph-seal-check"></i></button>
                         </div>
@@ -694,9 +692,8 @@
                         <div class="cert-icon"></div>
                         <div class="cert-info">
                             <div class="cert-name">Introduction to Web Development I</div>
-                            <div class="cert-org">University of Alicante & Google Activate</div>
+                            <div class="cert-desc"><span class="cert-org">University of Alicante & Google Activate</span><span class="cert-date"><i class="ph ph-calendar-dots"></i>Jan 2017</span></div>
                         </div>
-                        <div class="cert-date">Jan 2017</div>
                         <div class="cert-actions">
                             <button class="action-btn" onclick="viewCertificate('Introduction to Web Development I', 'University of Alicante', 'Jan 2017')" title="View Certificate"><i class="ph ph-seal-check"></i></button>
                         </div>
@@ -705,9 +702,8 @@
                         <div class="cert-icon"></div>
                         <div class="cert-info">
                             <div class="cert-name">Introduction to Web Development II</div>
-                            <div class="cert-org">University of Alicante & Google Activate</div>
+                            <div class="cert-desc"><span class="cert-org">University of Alicante & Google Activate</span><span class="cert-date"><i class="ph ph-calendar-dots"></i>Apr 2017</span></div>
                         </div>
-                        <div class="cert-date">Apr 2017</div>
                         <div class="cert-actions">
                             <button class="action-btn" onclick="viewCertificate('Introduction to Web Development II', 'University of Alicante', 'Apr 2017')" title="View Certificate"><i class="ph ph-seal-check"></i></button>
                         </div>
@@ -716,9 +712,8 @@
                         <div class="cert-icon"></div>
                         <div class="cert-info">
                             <div class="cert-name">Digital Marketing Fundamentals Course</div>
-                            <div class="cert-org">IAB Europe & Google Activate</div>
+                            <div class="cert-desc"><span class="cert-org">IAB Europe & Google Activate</span><span class="cert-date"><i class="ph ph-calendar-dots"></i>Jan 2017</span></div>
                         </div>
-                        <div class="cert-date">Jan 2017</div>
                         <div class="cert-actions">
                             <button class="action-btn" onclick="viewCertificate('Digital Marketing Fundamentals Course', 'IAB Europe & Google', 'Jan 2017')" title="View Certificate"><i class="ph ph-seal-check"></i></button>
                         </div>
@@ -727,11 +722,10 @@
                         <div class="cert-icon"></div>
                         <div class="cert-info">
                             <div class="cert-name">Frontend Roadmap</div>
-                            <div class="cert-org">Pragma</div>
+                            <div class="cert-desc"><span class="cert-org">Pragma</span><span class="cert-date"><i class="ph ph-calendar-dots"></i>Dec 2021</span></div>
                         </div>
-                        <div class="cert-date">Dec 2021</div>
                         <div class="cert-actions">
-                            <button class="action-btn" onclick="viewCertificate('Frontend Roadmap', 'Pragma', 'Dec 2021')" title="View Certificate"><i class="ph ph-seal-check"></i></button>
+                            <button class="action-btn" onclick="viewCertificate('Frontend Roadmap', 'Pragma', '')" title="View Certificate"><i class="ph ph-seal-check"></i></button>
                         </div>
                     </div>
                 </div>
@@ -745,9 +739,8 @@
                         <div class="cert-icon"></div>
                         <div class="cert-info">
                             <div class="cert-name">Scrum Fundamentals Certified</div>
-                            <div class="cert-org">SCRUMstudy</div>
+                            <div class="cert-desc"><span class="cert-org">SCRUMstudy</span><span class="cert-date"><i class="ph ph-calendar-dots"></i>Mar 2021</span></div>
                         </div>
-                        <div class="cert-date">Mar 2021</div>
                         <div class="cert-actions">
                             <button class="action-btn" onclick="viewCertificate('Scrum Fundamentals Certified', 'SCRUMstudy', 'Mar 2021')" title="View Certificate"><i class="ph ph-seal-check"></i></button>
                         </div>
@@ -763,9 +756,8 @@
                         <div class="cert-icon"></div>
                         <div class="cert-info">
                             <div class="cert-name">Lean Startup: Develop Your Business Model</div>
-                            <div class="cert-org">UniMOOC & University of Alicante</div>
+                            <div class="cert-desc"><span class="cert-org">UniMOOC & University of Alicante</span><span class="cert-date"><i class="ph ph-calendar-dots"></i>Mar 2016</span></div>
                         </div>
-                        <div class="cert-date">Mar 2016</div>
                         <div class="cert-actions">
                             <button class="action-btn" onclick="viewCertificate('Lean Startup: Develop Your Business Model', 'UniMOOC', 'Mar 2016')" title="View Certificate"><i class="ph ph-seal-check"></i></button>
                         </div>
@@ -774,9 +766,8 @@
                         <div class="cert-icon"></div>
                         <div class="cert-info">
                             <div class="cert-name">Strategic Sectors in Digital Key</div>
-                            <div class="cert-org">UniMOOC & University of Alicante</div>
+                            <div class="cert-desc"><span class="cert-org">UniMOOC & University of Alicante</span><span class="cert-date"><i class="ph ph-calendar-dots"></i>May 2016</span></div>
                         </div>
-                        <div class="cert-date">May 2016</div>
                         <div class="cert-actions">
                             <button class="action-btn" onclick="viewCertificate('Strategic Sectors in Digital Key', 'UniMOOC', 'May 2016')" title="View Certificate"><i class="ph ph-seal-check"></i></button>
                         </div>
@@ -785,9 +776,8 @@
                         <div class="cert-icon"></div>
                         <div class="cert-info">
                             <div class="cert-name">E-Commerce for Entrepreneurs</div>
-                            <div class="cert-org">UniMOOC & University of Alicante</div>
+                            <div class="cert-desc"><span class="cert-org">UniMOOC & University of Alicante</span><span class="cert-date"><i class="ph ph-calendar-dots"></i>May 2016</span></div>
                         </div>
-                        <div class="cert-date">May 2016</div>
                         <div class="cert-actions">
                             <button class="action-btn" onclick="viewCertificate('E-Commerce for Entrepreneurs', 'UniMOOC', 'May 2016')" title="View Certificate"><i class="ph ph-seal-check"></i></button>
                         </div>
@@ -796,9 +786,8 @@
                         <div class="cert-icon"></div>
                         <div class="cert-info">
                             <div class="cert-name">Entrepreneurship in Silicon Valley</div>
-                            <div class="cert-org">UniMOOC & California-Spain Chamber of Commerce</div>
+                            <div class="cert-desc"><span class="cert-org">UniMOOC & California-Spain Chamber of Commerce</span><span class="cert-date"><i class="ph ph-calendar-dots"></i>Mar 2016</span></div>
                         </div>
-                        <div class="cert-date">Mar 2016</div>
                         <div class="cert-actions">
                             <button class="action-btn" onclick="viewCertificate('Entrepreneurship in Silicon Valley', 'UniMOOC', 'Mar 2016')" title="View Certificate"><i class="ph ph-seal-check"></i></button>
                         </div>
@@ -807,9 +796,8 @@
                         <div class="cert-icon"></div>
                         <div class="cert-info">
                             <div class="cert-name">Basic Personal Finance Course: Finance for Mortals</div>
-                            <div class="cert-org">UniMOOC & UCEIF & Santander Financial Institute</div>
+                            <div class="cert-desc"><span class="cert-org">UniMOOC & UCEIF & Santander Financial Institute</span><span class="cert-date"><i class="ph ph-calendar-dots"></i>May 2016</span></div>
                         </div>
-                        <div class="cert-date">May 2016</div>
                         <div class="cert-actions">
                             <button class="action-btn" onclick="viewCertificate('Basic Personal Finance Course: Finance for Mortals', 'UniMOOC & UCEIF', 'May 2016')" title="View Certificate"><i class="ph ph-seal-check"></i></button>
                         </div>
@@ -818,9 +806,8 @@
                         <div class="cert-icon"></div>
                         <div class="cert-info">
                             <div class="cert-name">Business Training Certificate - BOD Entrepreneurs Center</div>
-                            <div class="cert-org">BOD Foundation & University of Los Andes</div>
+                            <div class="cert-desc"><span class="cert-org">BOD Foundation & University of Los Andes</span><span class="cert-date"><i class="ph ph-calendar-dots"></i>Mar 2018</span></div>
                         </div>
-                        <div class="cert-date">Mar 2018</div>
                         <div class="cert-actions">
                             <button class="action-btn" onclick="viewCertificate('Business Training Certificate - BOD Entrepreneurs Center', 'BOD Foundation', 'Mar 2018')" title="View Certificate"><i class="ph ph-seal-check"></i></button>
                         </div>
@@ -829,9 +816,8 @@
                         <div class="cert-icon"></div>
                         <div class="cert-info">
                             <div class="cert-name">How to Program for Entrepreneurs - HTML and CSS</div>
-                            <div class="cert-org">Udemy</div>
+                            <div class="cert-desc"><span class="cert-org">Udemy</span><span class="cert-date"><i class="ph ph-calendar-dots"></i>Mar 2016</span></div>
                         </div>
-                        <div class="cert-date">Mar 2016</div>
                         <div class="cert-actions">
                             <button class="action-btn" onclick="viewCertificate('How to Program for Entrepreneurs - HTML and CSS', 'Udemy', 'Mar 2016')" title="View Certificate"><i class="ph ph-seal-check"></i></button>
                         </div>
@@ -840,9 +826,8 @@
                         <div class="cert-icon"></div>
                         <div class="cert-info">
                             <div class="cert-name">Resources and Tools for Entrepreneurship</div>
-                            <div class="cert-org">UniMOOC & International Economics Institute - University of Alicante</div>
+                            <div class="cert-desc"><span class="cert-org">UniMOOC & International Economics Institute - University of Alicante</span><span class="cert-date"><i class="ph ph-calendar-dots"></i>Mar 2016</span></div>
                         </div>
-                        <div class="cert-date">Mar 2016</div>
                         <div class="cert-actions">
                             <button class="action-btn" onclick="viewCertificate('Resources and Tools for Entrepreneurship', 'UniMOOC & University of Alicante', 'Mar 2016')" title="View Certificate"><i class="ph ph-seal-check"></i></button>
                         </div>
@@ -851,9 +836,8 @@
                         <div class="cert-icon"></div>
                         <div class="cert-info">
                             <div class="cert-name">Legislation for Entrepreneurs</div>
-                            <div class="cert-org">UniMOOC & International Economics Institute - University of Alicante</div>
+                            <div class="cert-desc"><span class="cert-org">UniMOOC & International Economics Institute - University of Alicante</span><span class="cert-date"><i class="ph ph-calendar-dots"></i>May 2016</span></div>
                         </div>
-                        <div class="cert-date">May 2016</div>
                         <div class="cert-actions">
                             <button class="action-btn" onclick="viewCertificate('Legislation for Entrepreneurs', 'UniMOOC & University of Alicante', 'May 2016')" title="View Certificate"><i class="ph ph-seal-check"></i></button>
                         </div>
@@ -862,9 +846,8 @@
                         <div class="cert-icon"></div>
                         <div class="cert-info">
                             <div class="cert-name">Dare to Act</div>
-                            <div class="cert-org">UniMOOC & International Economics Institute - University of Alicante</div>
+                            <div class="cert-desc"><span class="cert-org">UniMOOC & International Economics Institute - University of Alicante</span><span class="cert-date"><i class="ph ph-calendar-dots"></i>May 2016</span></div>
                         </div>
-                        <div class="cert-date">May 2016</div>
                         <div class="cert-actions">
                             <button class="action-btn" onclick="viewCertificate('Dare to Act', 'UniMOOC & University of Alicante', 'May 2016')" title="View Certificate"><i class="ph ph-seal-check"></i></button>
                         </div>
@@ -873,9 +856,8 @@
                         <div class="cert-icon"></div>
                         <div class="cert-info">
                             <div class="cert-name">Idea Generation</div>
-                            <div class="cert-org">UniMOOC & IPAE School of Entrepreneurs</div>
+                            <div class="cert-desc"><span class="cert-org">UniMOOC & IPAE School of Entrepreneurs</span><span class="cert-date"><i class="ph ph-calendar-dots"></i>Mar 2016</span></div>
                         </div>
-                        <div class="cert-date">Mar 2016</div>
                         <div class="cert-actions">
                             <button class="action-btn" onclick="viewCertificate('Idea Generation', 'UniMOOC & IPAE', 'Mar 2016')" title="View Certificate"><i class="ph ph-seal-check"></i></button>
                         </div>
@@ -884,9 +866,8 @@
                         <div class="cert-icon"></div>
                         <div class="cert-info">
                             <div class="cert-name">YUZZ, Your Springboard to Entrepreneurship</div>
-                            <div class="cert-org">UniMOOC & YUZZ Program & Santander Universities</div>
+                            <div class="cert-desc"><span class="cert-org">UniMOOC & YUZZ Program & Santander Universities</span><span class="cert-date"><i class="ph ph-calendar-dots"></i>Mar 2016</span></div>
                         </div>
-                        <div class="cert-date">Mar 2016</div>
                         <div class="cert-actions">
                             <button class="action-btn" onclick="viewCertificate('YUZZ, Your Springboard to Entrepreneurship', 'UniMOOC & YUZZ & Santander', 'Mar 2016')" title="View Certificate"><i class="ph ph-seal-check"></i></button>
                         </div>
@@ -895,9 +876,8 @@
                         <div class="cert-icon"></div>
                         <div class="cert-info">
                             <div class="cert-name">Being an Entrepreneur</div>
-                            <div class="cert-org">UniMOOC & Lanzadera Project</div>
+                            <div class="cert-desc"><span class="cert-org">UniMOOC & Lanzadera Project</span><span class="cert-date"><i class="ph ph-calendar-dots"></i>May 2016</span></div>
                         </div>
-                        <div class="cert-date">May 2016</div>
                         <div class="cert-actions">
                             <button class="action-btn" onclick="viewCertificate('Being an Entrepreneur', 'UniMOOC & Lanzadera', 'May 2016')" title="View Certificate"><i class="ph ph-seal-check"></i></button>
                         </div>
@@ -906,9 +886,8 @@
                         <div class="cert-icon"></div>
                         <div class="cert-info">
                             <div class="cert-name">Entrepreneurship in Cultural and Creative Industries</div>
-                            <div class="cert-org">UniMOOC & UNESCO Club</div>
+                            <div class="cert-desc"><span class="cert-org">UniMOOC & UNESCO Club</span><span class="cert-date"><i class="ph ph-calendar-dots"></i>Apr 2016</span></div>
                         </div>
-                        <div class="cert-date">Apr 2016</div>
                         <div class="cert-actions">
                             <button class="action-btn" onclick="viewCertificate('Entrepreneurship in Cultural and Creative Industries', 'UniMOOC & UNESCO Club', 'Apr 2016')" title="View Certificate"><i class="ph ph-seal-check"></i></button>
                         </div>
@@ -917,9 +896,8 @@
                         <div class="cert-icon"></div>
                         <div class="cert-info">
                             <div class="cert-name">Activate Entrepreneurship Path</div>
-                            <div class="cert-org">UniMOOC & Google Activate Training</div>
+                            <div class="cert-desc"><span class="cert-org">UniMOOC & Google Activate Training</span><span class="cert-date"><i class="ph ph-calendar-dots"></i>May 2016</span></div>
                         </div>
-                        <div class="cert-date">May 2016</div>
                         <div class="cert-actions">
                             <button class="action-btn" onclick="viewCertificate('Activate Entrepreneurship Path', 'UniMOOC & Google Activate', 'May 2016')" title="View Certificate"><i class="ph ph-seal-check"></i></button>
                         </div>
@@ -935,9 +913,8 @@
                         <div class="cert-icon"></div>
                         <div class="cert-info">
                             <div class="cert-name">World Plone Day Venezuela 2011</div>
-                            <div class="cert-org">Cenditel Foundation</div>
+                            <div class="cert-desc"><span class="cert-org">Cenditel Foundation</span><span class="cert-date"><i class="ph ph-calendar-dots"></i>Apr 2011</span></div>
                         </div>
-                        <div class="cert-date">Apr 2011</div>
                         <div class="cert-actions">
                             <button class="action-btn" onclick="viewCertificate('World Plone Day Venezuela 2011', 'Cenditel Foundation', 'Apr 2011')" title="View Certificate"><i class="ph ph-seal-check"></i></button>
                         </div>
@@ -946,9 +923,8 @@
                         <div class="cert-icon"></div>
                         <div class="cert-info">
                             <div class="cert-name">Virtual DTIC Meeting 2012</div>
-                            <div class="cert-org">Central University of Venezuela</div>
+                            <div class="cert-desc"><span class="cert-org">Central University of Venezuela</span><span class="cert-date"><i class="ph ph-calendar-dots"></i>Jun 2012</span></div>
                         </div>
-                        <div class="cert-date">Jun 2012</div>
                         <div class="cert-actions">
                             <button class="action-btn" onclick="viewCertificate('Virtual DTIC Meeting 2012', 'Central University of Venezuela', 'Jun 2012')" title="View Certificate"><i class="ph ph-seal-check"></i></button>
                         </div>
@@ -957,9 +933,8 @@
                         <div class="cert-icon"></div>
                         <div class="cert-info">
                             <div class="cert-name">II Virtual DTIC Meeting 2013</div>
-                            <div class="cert-org">Central University of Venezuela</div>
+                            <div class="cert-desc"><span class="cert-org">Central University of Venezuela</span><span class="cert-date"><i class="ph ph-calendar-dots"></i>Jul 2013</span></div>
                         </div>
-                        <div class="cert-date">Jul 2013</div>
                         <div class="cert-actions">
                             <button class="action-btn" onclick="viewCertificate('II Virtual DTIC Meeting 2013', 'Central University of Venezuela', 'Jul 2013')" title="View Certificate"><i class="ph ph-seal-check"></i></button>
                         </div>
@@ -968,9 +943,8 @@
                         <div class="cert-icon"></div>
                         <div class="cert-info">
                             <div class="cert-name">III Virtual DTIC Meeting 2014</div>
-                            <div class="cert-org">Central University of Venezuela</div>
+                            <div class="cert-desc"><span class="cert-org">Central University of Venezuela</span><span class="cert-date"><i class="ph ph-calendar-dots"></i>Jul 2014</span></div>
                         </div>
-                        <div class="cert-date">Jul 2014</div>
                         <div class="cert-actions">
                             <button class="action-btn" onclick="viewCertificate('III Virtual DTIC Meeting 2014', 'Central University of Venezuela', 'Jul 2014')" title="View Certificate"><i class="ph ph-seal-check"></i></button>
                         </div>
@@ -979,9 +953,8 @@
                         <div class="cert-icon"></div>
                         <div class="cert-info">
                             <div class="cert-name">JIS Go Live 2020 - XV Health Informatics Conference</div>
-                            <div class="cert-org">Italian Hospital of Buenos Aires & HL7 Argentina</div>
+                            <div class="cert-desc"><span class="cert-org">Italian Hospital of Buenos Aires & HL7 Argentina</span><span class="cert-date"><i class="ph ph-calendar-dots"></i>Nov 2020</span></div>
                         </div>
-                        <div class="cert-date">Nov 2020</div>
                         <div class="cert-actions">
                             <button class="action-btn" onclick="viewCertificate('JIS Go Live 2020 - XV Health Informatics Conference', 'Italian Hospital of Buenos Aires', 'Nov 2020')" title="View Certificate"><i class="ph ph-seal-check"></i></button>
                         </div>
@@ -990,9 +963,8 @@
                         <div class="cert-icon"></div>
                         <div class="cert-info">
                             <div class="cert-name">DIDACTICBOTS Research Project Launch Conference</div>
-                            <div class="cert-org">UIS - Industrial University of Santander</div>
+                            <div class="cert-desc"><span class="cert-org">UIS - Industrial University of Santander</span><span class="cert-date"><i class="ph ph-calendar-dots"></i>Nov 2020</span></div>
                         </div>
-                        <div class="cert-date">Nov 2020</div>
                         <div class="cert-actions">
                             <button class="action-btn" onclick="viewCertificate('DIDACTICBOTS Research Project Launch Conference', 'UIS', 'Nov 2020')" title="View Certificate"><i class="ph ph-seal-check"></i></button>
                         </div>
@@ -1001,9 +973,8 @@
                         <div class="cert-icon"></div>
                         <div class="cert-info">
                             <div class="cert-name">Artificial Intelligence Workshop</div>
-                            <div class="cert-org">UIS - Industrial University of Santander</div>
+                            <div class="cert-desc"><span class="cert-org">UIS - Industrial University of Santander</span><span class="cert-date"><i class="ph ph-calendar-dots"></i>Oct 2020</span></div>
                         </div>
-                        <div class="cert-date">Oct 2020</div>
                         <div class="cert-actions">
                             <button class="action-btn" onclick="viewCertificate('Artificial Intelligence Workshop', 'UIS', 'Oct 2020')" title="View Certificate"><i class="ph ph-seal-check"></i></button>
                         </div>
@@ -1012,9 +983,8 @@
                         <div class="cert-icon"></div>
                         <div class="cert-info">
                             <div class="cert-name">Human and Productive Skills Seminar for Business Reactivation</div>
-                            <div class="cert-org">Comfenalco Santander University Foundation</div>
+                            <div class="cert-desc"><span class="cert-org">Comfenalco Santander University Foundation</span><span class="cert-date"><i class="ph ph-calendar-dots"></i>Dec 2020</span></div>
                         </div>
-                        <div class="cert-date">Dec 2020</div>
                         <div class="cert-actions">
                             <button class="action-btn" onclick="viewCertificate('Human and Productive Skills Seminar for Business Reactivation', 'Comfenalco Santander', 'Dec 2020')" title="View Certificate"><i class="ph ph-seal-check"></i></button>
                         </div>
@@ -1023,9 +993,8 @@
                         <div class="cert-icon"></div>
                         <div class="cert-info">
                             <div class="cert-name">II Latin American Meeting on Free Knowledge and Licensing</div>
-                            <div class="cert-org">Cenditel Foundation & REDECON</div>
+                            <div class="cert-desc"><span class="cert-org">Cenditel Foundation & REDECON</span><span class="cert-date"><i class="ph ph-calendar-dots"></i>Oct 2010</span></div>
                         </div>
-                        <div class="cert-date">Oct 2010</div>
                         <div class="cert-actions">
                             <button class="action-btn" onclick="viewCertificate('II Latin American Meeting on Free Knowledge and Licensing', 'Cenditel Foundation & REDECON', 'Oct 2010')" title="View Certificate"><i class="ph ph-seal-check"></i></button>
                         </div>
@@ -1034,9 +1003,8 @@
                         <div class="cert-icon"></div>
                         <div class="cert-info">
                             <div class="cert-name">1st National Meeting of Free Software Entrepreneurs</div>
-                            <div class="cert-org">CNTI & CENDITEL</div>
+                            <div class="cert-desc"><span class="cert-org">CNTI & CENDITEL</span><span class="cert-date"><i class="ph ph-calendar-dots"></i>Dec 2007</span></div>
                         </div>
-                        <div class="cert-date">Dec 2007</div>
                         <div class="cert-actions">
                             <button class="action-btn" onclick="viewCertificate('1st National Meeting of Free Software Entrepreneurs', 'CNTI & CENDITEL', 'Dec 2007')" title="View Certificate"><i class="ph ph-seal-check"></i></button>
                         </div>
@@ -1045,9 +1013,8 @@
                         <div class="cert-icon"></div>
                         <div class="cert-info">
                             <div class="cert-name">First Free Technologies Conference</div>
-                            <div class="cert-org">CENDITEL</div>
+                            <div class="cert-desc"><span class="cert-org">CENDITEL</span><span class="cert-date"><i class="ph ph-calendar-dots"></i>Dec 2007</span></div>
                         </div>
-                        <div class="cert-date">Dec 2007</div>
                         <div class="cert-actions">
                             <button class="action-btn" onclick="viewCertificate('First Free Technologies Conference', 'CENDITEL', 'Dec 2007')" title="View Certificate"><i class="ph ph-seal-check"></i></button>
                         </div>
@@ -1056,9 +1023,8 @@
                         <div class="cert-icon"></div>
                         <div class="cert-info">
                             <div class="cert-name">Recognition - "Youth and Leadership" Training Workshop</div>
-                            <div class="cert-org">Young Future Foundation</div>
+                            <div class="cert-desc"><span class="cert-org">Young Future Foundation</span><span class="cert-date"><i class="ph ph-calendar-dots"></i>May 2015</span></div>
                         </div>
-                        <div class="cert-date">May 2015</div>
                         <div class="cert-actions">
                             <button class="action-btn" onclick="viewCertificate('Recognition - &quot;Youth and Leadership&quot; Training Workshop', 'Young Future Foundation', 'May 2015')" title="View Certificate"><i class="ph ph-seal-check"></i></button>
                         </div>
@@ -1067,9 +1033,8 @@
                         <div class="cert-icon"></div>
                         <div class="cert-info">
                             <div class="cert-name">ULA Business Fair 2007 - Mérida: Best Investment Option</div>
-                            <div class="cert-org">Faculty of Engineering - University of Los Andes (ULA)</div>
+                            <div class="cert-desc"><span class="cert-org">Faculty of Engineering - University of Los Andes (ULA)</span><span class="cert-date"><i class="ph ph-calendar-dots"></i>Jul 2007</span></div>
                         </div>
-                        <div class="cert-date">Jul 2007</div>
                         <div class="cert-actions">
                             <button class="action-btn" onclick="viewCertificate('ULA Business Fair 2007 - Mérida: Best Investment Option', 'ULA Faculty of Engineering', 'Jul 2007')" title="View Certificate"><i class="ph ph-seal-check"></i></button>
                         </div>
@@ -1078,9 +1043,8 @@
                         <div class="cert-icon"></div>
                         <div class="cert-info">
                             <div class="cert-name">ULA Business Fair 2007 - Social Technological District PDVSA</div>
-                            <div class="cert-org">Faculty of Engineering - University of Los Andes (ULA)</div>
+                            <div class="cert-desc"><span class="cert-org">Faculty of Engineering - University of Los Andes (ULA)</span><span class="cert-date"><i class="ph ph-calendar-dots"></i>Jul 2007</span></div>
                         </div>
-                        <div class="cert-date">Jul 2007</div>
                         <div class="cert-actions">
                             <button class="action-btn" onclick="viewCertificate('ULA Business Fair 2007 - Social Technological District PDVSA', 'ULA Faculty of Engineering', 'Jul 2007')" title="View Certificate"><i class="ph ph-seal-check"></i></button>
                         </div>
@@ -1089,9 +1053,8 @@
                         <div class="cert-icon"></div>
                         <div class="cert-info">
                             <div class="cert-name">ULA Business Fair 2007 - Realize Your Entrepreneurial Potential</div>
-                            <div class="cert-org">Faculty of Engineering - University of Los Andes (ULA)</div>
+                            <div class="cert-desc"><span class="cert-org">Faculty of Engineering - University of Los Andes (ULA)</span><span class="cert-date"><i class="ph ph-calendar-dots"></i>Jul 2007</span></div>
                         </div>
-                        <div class="cert-date">Jul 2007</div>
                         <div class="cert-actions">
                             <button class="action-btn" onclick="viewCertificate('ULA Business Fair 2007 - Realize Your Entrepreneurial Potential', 'ULA Faculty of Engineering', 'Jul 2007')" title="View Certificate"><i class="ph ph-seal-check"></i></button>
                         </div>
@@ -1100,9 +1063,8 @@
                         <div class="cert-icon"></div>
                         <div class="cert-info">
                             <div class="cert-name">ULA Business Fair 2007 - Youth Profile in Industry - Ternium SIDOR</div>
-                            <div class="cert-org">Faculty of Engineering - University of Los Andes (ULA)</div>
+                            <div class="cert-desc"><span class="cert-org">Faculty of Engineering - University of Los Andes (ULA)</span><span class="cert-date"><i class="ph ph-calendar-dots"></i>Jul 2007</span></div>
                         </div>
-                        <div class="cert-date">Jul 2007</div>
                         <div class="cert-actions">
                             <button class="action-btn" onclick="viewCertificate('ULA Business Fair 2007 - Youth Profile in Industry - Ternium SIDOR', 'ULA Faculty of Engineering', 'Jul 2007')" title="View Certificate"><i class="ph ph-seal-check"></i></button>
                         </div>
@@ -1111,9 +1073,8 @@
                         <div class="cert-icon"></div>
                         <div class="cert-info">
                             <div class="cert-name">ULA Business Fair 2007 - Venezuelan Business Fabric Reconstruction</div>
-                            <div class="cert-org">Faculty of Engineering - University of Los Andes (ULA)</div>
+                            <div class="cert-desc"><span class="cert-org">Faculty of Engineering - University of Los Andes (ULA)</span><span class="cert-date"><i class="ph ph-calendar-dots"></i>Jul 2007</span></div>
                         </div>
-                        <div class="cert-date">Jul 2007</div>
                         <div class="cert-actions">
                             <button class="action-btn" onclick="viewCertificate('ULA Business Fair 2007 - Venezuelan Business Fabric Reconstruction', 'ULA Faculty of Engineering', 'Jul 2007')" title="View Certificate"><i class="ph ph-seal-check"></i></button>
                         </div>
@@ -1122,9 +1083,8 @@
                         <div class="cert-icon"></div>
                         <div class="cert-info">
                             <div class="cert-name">4th DevSecOps Fest BCP 2023</div>
-                            <div class="cert-org">Banco de Crédito del Perú</div>
+                            <div class="cert-desc"><span class="cert-org">Banco de Crédito del Perú</span><span class="cert-date"><i class="ph ph-calendar-dots"></i>Nov 2023</span></div>
                         </div>
-                        <div class="cert-date">Nov 2023</div>
                         <div class="cert-actions">
                             <button class="action-btn" onclick="viewCertificate('4th DevSecOps Fest BCP 2023', 'Banco de Crédito del Perú', 'Nov 2023')" title="View Certificate"><i class="ph ph-seal-check"></i></button>
                         </div>
@@ -1140,9 +1100,8 @@
                         <div class="cert-icon"></div>
                         <div class="cert-info">
                             <div class="cert-name">Workplace Harassment Prevention and Labor Coexistence Committees</div>
-                            <div class="cert-org">Suramericana S.A. Occupational Risk Insurance Company</div>
+                            <div class="cert-desc"><span class="cert-org">Suramericana S.A. Occupational Risk Insurance Company</span><span class="cert-date"><i class="ph ph-calendar-dots"></i>Aug 2021</span></div>
                         </div>
-                        <div class="cert-date">Aug 2021</div>
                         <div class="cert-actions">
                             <button class="action-btn" onclick="viewCertificate('Workplace Harassment Prevention and Labor Coexistence Committees', 'Suramericana S.A.', 'Aug 2021')" title="View Certificate"><i class="ph ph-seal-check"></i></button>
                         </div>
@@ -1151,9 +1110,8 @@
                         <div class="cert-icon"></div>
                         <div class="cert-info">
                             <div class="cert-name">50-hour Virtual Training in OSHMS</div>
-                            <div class="cert-org">Suramericana S.A. Occupational Risk Insurance Company</div>
+                            <div class="cert-desc"><span class="cert-org">Suramericana S.A. Occupational Risk Insurance Company</span><span class="cert-date"><i class="ph ph-calendar-dots"></i>Jul 2023</span></div>
                         </div>
-                        <div class="cert-date">Jul 2023</div>
                         <div class="cert-actions">
                             <button class="action-btn" onclick="viewCertificate('50-hour Virtual Training in OSHMS', 'Suramericana S.A.', 'Jul 2023')" title="View Certificate"><i class="ph ph-seal-check"></i></button>
                         </div>
@@ -1162,9 +1120,8 @@
                         <div class="cert-icon"></div>
                         <div class="cert-info">
                             <div class="cert-name">Module 1: Organization of the OSHMS</div>
-                            <div class="cert-org">Suramericana S.A. Occupational Risk Insurance Company</div>
+                            <div class="cert-desc"><span class="cert-org">Suramericana S.A. Occupational Risk Insurance Company</span><span class="cert-date"><i class="ph ph-calendar-dots"></i>Jul 2023</span></div>
                         </div>
-                        <div class="cert-date">Jul 2023</div>
                         <div class="cert-actions">
                             <button class="action-btn" onclick="viewCertificate('Module 1: Organization of the OSHMS', 'Suramericana S.A.', 'Jul 2023')" title="View Certificate"><i class="ph ph-seal-check"></i></button>
                         </div>
@@ -1173,9 +1130,8 @@
                         <div class="cert-icon"></div>
                         <div class="cert-info">
                             <div class="cert-name">Module 2: Planning of the OSHMS</div>
-                            <div class="cert-org">Suramericana S.A. Occupational Risk Insurance Company</div>
+                            <div class="cert-desc"><span class="cert-org">Suramericana S.A. Occupational Risk Insurance Company</span><span class="cert-date"><i class="ph ph-calendar-dots"></i>Jul 2023</span></div>
                         </div>
-                        <div class="cert-date">Jul 2023</div>
                         <div class="cert-actions">
                             <button class="action-btn" onclick="viewCertificate('Module 2: Planning of the OSHMS', 'Suramericana S.A.', 'Jul 2023')" title="View Certificate"><i class="ph ph-seal-check"></i></button>
                         </div>
@@ -1184,9 +1140,8 @@
                         <div class="cert-icon"></div>
                         <div class="cert-info">
                             <div class="cert-name">Module 3: Implementation of the OSHMS</div>
-                            <div class="cert-org">Suramericana S.A. Occupational Risk Insurance Company</div>
+                            <div class="cert-desc"><span class="cert-org">Suramericana S.A. Occupational Risk Insurance Company</span><span class="cert-date"><i class="ph ph-calendar-dots"></i>Jul 2023</span></div>
                         </div>
-                        <div class="cert-date">Jul 2023</div>
                         <div class="cert-actions">
                             <button class="action-btn" onclick="viewCertificate('Module 3: Implementation of the OSHMS', 'Suramericana S.A.', 'Jul 2023')" title="View Certificate"><i class="ph ph-seal-check"></i></button>
                         </div>
@@ -1195,9 +1150,8 @@
                         <div class="cert-icon"></div>
                         <div class="cert-info">
                             <div class="cert-name">Module 4: Verification of the OSHMS</div>
-                            <div class="cert-org">Suramericana S.A. Occupational Risk Insurance Company</div>
+                            <div class="cert-desc"><span class="cert-org">Suramericana S.A. Occupational Risk Insurance Company</span><span class="cert-date"><i class="ph ph-calendar-dots"></i>Jul 2023</span></div>
                         </div>
-                        <div class="cert-date">Jul 2023</div>
                         <div class="cert-actions">
                             <button class="action-btn" onclick="viewCertificate('Module 4: Verification of the OSHMS', 'Suramericana S.A.', 'Jul 2023')" title="View Certificate"><i class="ph ph-seal-check"></i></button>
                         </div>
@@ -1206,9 +1160,8 @@
                         <div class="cert-icon"></div>
                         <div class="cert-info">
                             <div class="cert-name">Module 5: Improvement of the OSHMS</div>
-                            <div class="cert-org">Suramericana S.A. Occupational Risk Insurance Company</div>
+                            <div class="cert-desc"><span class="cert-org">Suramericana S.A. Occupational Risk Insurance Company</span><span class="cert-date"><i class="ph ph-calendar-dots"></i>Jul 2023</span></div>
                         </div>
-                        <div class="cert-date">Jul 2023</div>
                         <div class="cert-actions">
                             <button class="action-btn" onclick="viewCertificate('Module 5: Improvement of the OSHMS', 'Suramericana S.A.', 'Jul 2023')" title="View Certificate"><i class="ph ph-seal-check"></i></button>
                         </div>
@@ -1217,9 +1170,8 @@
                         <div class="cert-icon"></div>
                         <div class="cert-info">
                             <div class="cert-name">SURA Policies and Guidelines</div>
-                            <div class="cert-org">Suramericana S.A. Occupational Risk Insurance Company</div>
+                            <div class="cert-desc"><span class="cert-org">Suramericana S.A. Occupational Risk Insurance Company</span><span class="cert-date"><i class="ph ph-calendar-dots"></i>Feb 2024</span></div>
                         </div>
-                        <div class="cert-date">Feb 2024</div>
                         <div class="cert-actions">
                             <button class="action-btn" onclick="viewCertificate('SURA Policies and Guidelines', 'Suramericana S.A.', 'Feb 2024')" title="View Certificate"><i class="ph ph-seal-check"></i></button>
                         </div>
@@ -1228,9 +1180,8 @@
                         <div class="cert-icon"></div>
                         <div class="cert-info">
                             <div class="cert-name">Basic Information Security Concepts</div>
-                            <div class="cert-org">Suramericana S.A. Occupational Risk Insurance Company</div>
+                            <div class="cert-desc"><span class="cert-org">Suramericana S.A. Occupational Risk Insurance Company</span><span class="cert-date"><i class="ph ph-calendar-dots"></i>Feb 2024</span></div>
                         </div>
-                        <div class="cert-date">Feb 2024</div>
                         <div class="cert-actions">
                             <button class="action-btn" onclick="viewCertificate('Basic Information Security Concepts', 'Suramericana S.A.', 'Feb 2024')" title="View Certificate"><i class="ph ph-seal-check"></i></button>
                         </div>
