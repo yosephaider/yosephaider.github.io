@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Professional Certifications - Yosephaider Vanegas Q.</title>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"/>
     <style>
         * {
@@ -32,17 +34,30 @@
             border-bottom: 1px solid #e2e8f0;
         }
 
-        .header h1 {
-            font-size: 28px;
-            font-weight: 600;
-            color: #1a202c;
-            margin-bottom: 8px;
-        }
-
         .header p {
             color: #718096;
             font-size: 16px;
             font-weight: 400;
+        }
+
+        .header-title {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          margin-bottom: 8px;
+        }
+
+        .header-title img {
+            width: 35px;
+            height: auto;
+        }
+
+        .header-title h1 {
+            margin: 0;
+            padding-left: .4rem;
+            font-size: 2.0em;
+            font-weight: 600;
+            color: #1a202c;
         }
 
         .stats-bar {
@@ -73,6 +88,208 @@
 
         .content {
             padding: 30px 40px;
+        }
+
+        /* Featured AWS Certifications Section */
+        .featured-section {
+            background: #f6f4f4;
+            border-radius: 8px;
+            padding: 30px;
+            margin-bottom: 40px;
+            color: #000;
+        }
+
+        .featured-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 25px;
+        }
+
+        .featured-title {
+            font-size: 24px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .aws-badge {
+            background: #FF9900;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+
+        .featured-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .cert-card {
+            background: #fff;
+            border: 1px solid #909090;
+            border-radius: 8px;
+            padding: 20px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .cert-card:hover {
+            background: rgba(255, 255, 255, 0.15);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .cert-card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            margin-bottom: 12px;
+        }
+
+        .cert-card-title {
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 1.3;
+            flex: 1;
+            padding-right: 10px;
+        }
+
+        .cert-badge-icon {
+            font-size: 24px;
+            color: #FF9900;
+        }
+
+        .cert-card-meta {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            font-size: 13px;
+            opacity: 0.9;
+        }
+
+        .cert-card-date {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .cert-card-actions {
+            margin-top: 12px;
+            display: flex;
+            gap: 8px;
+        }
+
+        .cert-action-btn {
+            background: rgba(255, 255, 255, 0.2);
+            border: 1px solid #909090;
+            color: #444;
+            padding: 6px 12px;
+            border-radius: 4px;
+            font-size: 12px;
+            cursor: pointer;
+            transition: all 0.2s;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .cert-action-btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        /* Badges Section */
+        .badges-section {
+            background: #f6f4f4;
+            border-radius: 8px;
+            padding: 20px 30px 35px;
+            margin-bottom: 40px;
+            border: 1px dotted #c4b2b2;
+        }
+
+        .badges-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 25px;
+        }
+
+        .badges-title {
+            font-size: 22px;
+            font-weight: 600;
+            color: #1a202c;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .badges-title img {
+            width: 60px;
+            height: auto;
+        }
+
+        .badges-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .badge-item {
+            background: white;
+            border: 1px solid #ccd1d7;
+            border-radius: 8px;
+            padding: 10px 20px 15px;
+            text-align: center;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .badge-item:hover {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transform: translateY(-2px);
+        }
+
+        .badge-image {
+            width: 100px;
+            height: auto;
+            margin: 0 auto 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: transparent;
+        }
+        
+        .badge-image img {
+            width: 130px;
+            height: auto;
+        }
+
+        .badge-name {
+            font-size: 14px;
+            font-weight: 500;
+            color: #1a202c;
+            margin-bottom: 4px;
+            line-height: 1.3;
+        }
+
+        .badge-issuer {
+            font-size: 12px;
+            color: #718096;
+            margin-bottom: 4px;
+        }
+
+        .badge-date {
+            font-size: 11px;
+            color: #5a5e64;
         }
 
         .filters {
@@ -167,7 +384,6 @@
             line-height: 0.8;
         }
 
-
         .cert-desc {
             background-color: transparent;
             line-height: 1;
@@ -196,12 +412,6 @@
         .cert-date::before {
             content: '\2014';
             position: relative;
-        }
-
-        .cert-co {
-            /* background: #f0fff4; */
-            padding: 2px;
-            display: flex;
         }
 
         .cert-actions {
@@ -332,6 +542,10 @@
                 gap: 20px;
             }
 
+            .featured-grid, .badges-grid {
+                grid-template-columns: 1fr;
+            }
+
             .cert-row {
                 grid-template-columns: auto 1fr;
                 gap: 12px;
@@ -357,24 +571,6 @@
                 width: 95vw;
                 height: 95vh;
                 padding: 15px;
-            }
-
-            .modal-info {
-                font-size: 13px;
-                gap: 10px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .modal-content {
-                width: 100vw;
-                height: 100vh;
-                border-radius: 0;
-                margin: 0;
-            }
-
-            .modal {
-                padding: 0;
             }
         }
 
@@ -402,7 +598,10 @@
 <body>
     <div class="container">
         <div class="header">
-            <h1>Personal Certifications</h1>
+            <div class="header-title">
+              <img src="../images/cert.png" alt="Cert">
+              <h1>Professional Certifications</h1>
+            </div>
             <p>Yosephaider Vanegas Q. • Software Engineer / Site Reliability Engineer / DevOps Engineer</p>
         </div>
 
@@ -422,6 +621,135 @@
         </div>
 
         <div class="content">
+
+            <!-- Featured AWS Certifications -->
+            <!--
+            <div class="featured-section">
+                <div class="featured-header">
+                    <div class="featured-title">
+                        <i class="ph ph-medal"></i>
+                        AWS Training & Certifications
+                        <span class="aws-badge">NEW</span>
+                    </div>
+                </div>
+                <div class="featured-grid">
+                    <div class="cert-card" onclick="viewCertificate('Deploying Serverless Applications', 'AWS Training & Certification', 'Oct 2025')">
+                        <div class="cert-card-header">
+                            <div class="cert-card-title">Deploying Serverless Applications</div>
+                            <i class="ph ph-certificate cert-badge-icon"></i>
+                        </div>
+                        <div class="cert-card-meta">
+                            <div>AWS Training & Certification</div>
+                            <div class="cert-card-date">
+                                <i class="ph ph-calendar"></i>
+                                October 09, 2025
+                            </div>
+                        </div>
+                        <div class="cert-card-actions">
+                            <button class="cert-action-btn">
+                                <i class="ph ph-eye"></i> View
+                            </button>
+                            <button class="cert-action-btn">
+                                <i class="ph ph-download"></i> PDF
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="cert-card" onclick="viewCertificate('AWS Solutions Architect', 'AWS Training & Certification', 'Sep 2025')">
+                        <div class="cert-card-header">
+                            <div class="cert-card-title">AWS Solutions Architect - Associate</div>
+                            <i class="ph ph-certificate cert-badge-icon"></i>
+                        </div>
+                        <div class="cert-card-meta">
+                            <div>AWS Training & Certification</div>
+                            <div class="cert-card-date">
+                                <i class="ph ph-calendar"></i>
+                                September 2025
+                            </div>
+                        </div>
+                        <div class="cert-card-actions">
+                            <button class="cert-action-btn">
+                                <i class="ph ph-eye"></i> View
+                            </button>
+                            <button class="cert-action-btn">
+                                <i class="ph ph-download"></i> PDF
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="cert-card" onclick="viewCertificate('AWS Cloud Practitioner Essentials', 'AWS Training & Certification', 'Aug 2025')">
+                        <div class="cert-card-header">
+                            <div class="cert-card-title">AWS Cloud Practitioner Essentials</div>
+                            <i class="ph ph-certificate cert-badge-icon"></i>
+                        </div>
+                        <div class="cert-card-meta">
+                            <div>AWS Training & Certification</div>
+                            <div class="cert-card-date">
+                                <i class="ph ph-calendar"></i>
+                                August 2025
+                            </div>
+                        </div>
+                        <div class="cert-card-actions">
+                            <button class="cert-action-btn">
+                                <i class="ph ph-eye"></i> View
+                            </button>
+                            <button class="cert-action-btn">
+                                <i class="ph ph-download"></i> PDF
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            -->
+
+            <!-- Digital Badges Section -->
+            <div class="badges-section">
+                <div class="badges-header">
+                    <div class="badges-title">
+                        <i class="ph ph-shield-check"></i>
+                        Badges
+                        <img src="https://www.credly.com/assets/structure/logo-c48f2e5e3a483bb2b97d000b9ac94ffc8e194377f104c6a80aaf60c18c8a9d13.svg" alt="credly">
+                    </div>
+                </div>
+                <div class="badges-grid">
+                    <div class="badge-item" onclick="window.open('https://www.credly.com/badges/46624063-e7cb-482a-8705-a93c9a4254ea/public_url', '_blank')">
+                        <div class="badge-image">
+                            <img src="https://images.credly.com/images/30816e43-2550-4e1c-be22-3f03c5573bb9/blob" alt="badge">
+                        </div>
+                        <div class="badge-name">    AWS Cloud Quest: Cloud Practitioner - Training Badge</div>
+                        <div class="badge-issuer">Amazon Web Services Training and Certification</div>
+                        <div class="badge-date">Issued Oct 11, 2025</div>
+                    </div>
+
+                    <div class="badge-item" onclick="window.open('https://www.credly.com/badges/1188cda1-5845-43c5-aefc-a99ee11fbd4d/public_url', '_blank')">
+                        <div class="badge-image">
+                            <img src="https://images.credly.com/images/7b08cc0e-064b-407d-b70e-323509c3e474/blob" alt="badge">
+                        </div>
+                        <div class="badge-name">    AWS Educate Getting Started with Compute - Training Badge</div>
+                        <div class="badge-issuer">Amazon Web Services Training and Certification</div>
+                        <div class="badge-date">Issued Oct 7, 2025</div>
+                    </div>
+
+                    <div class="badge-item" onclick="window.open('https://www.credly.com/badges/1228e17f-d3df-459c-9a57-07764f5951f5/public_url', '_blank')">
+                        <div class="badge-image">
+                            <img src="https://images.credly.com/images/3b1b42e6-dfc2-492b-90df-8058096cb93d/blob" alt="badge">
+                        </div>
+                        <div class="badge-name">    AWS Educate Getting Started with Storage - Training Badge</div>
+                        <div class="badge-issuer">Amazon Web Services Training and Certification</div>
+                        <div class="badge-date">Issued Sep 1, 2025</div>
+                    </div>
+
+                    <div class="badge-item" onclick="window.open('https://www.credly.com/badges/6788d01e-6acf-4565-87ac-548636db9c57/public_url', '_blank')">
+                        <div class="badge-image">
+                            <img src="https://images.credly.com/images/f25ec9d4-c59d-49b9-944a-f160012e81cd/image.png" alt="badge">
+                        </div>
+                        <div class="badge-name">Linux Unhatched</div>
+                        <div class="badge-issuer">Cisco</div>
+                        <div class="badge-date">Issued Jan 26, 2025</div>
+                    </div>
+                </div>
+            </div>
+
             <input type="text" class="search-box" id="searchBox" placeholder="Search certification..." onkeyup="searchCerts(this.value)">
             
             <div class="filters">
@@ -622,6 +950,26 @@
                         </div>
                         <div class="cert-actions">
                             <button class="action-btn" onclick="viewCertificate('AWS SysOps Administrator', 'CerTI+', 'Apr 2025')" title="View Certificate"><i class="ph ph-seal-check"></i></button>
+                        </div>
+                    </div>
+                    <div class="cert-row devops fade-in">
+                        <div class="cert-icon"></div>
+                        <div class="cert-info">
+                            <div class="cert-name">Introduction to Amazon Elastic Compute Cloud (EC2)</div>
+                            <div class="cert-desc"><span class="cert-org">AWS Training & Certification</span><span class="cert-date"><i class="ph ph-calendar-dots"></i>Feb 2021</span></div>
+                        </div>
+                        <div class="cert-actions">
+                            <button class="action-btn" onclick="viewCertificate('Introduction to Amazon Elastic Compute Cloud (EC2)', 'AWS Training & Certification', 'Feb 2021')" title="View Certificate"><i class="ph ph-seal-check"></i></button>
+                        </div>
+                    </div>
+                    <div class="cert-row devops fade-in">
+                        <div class="cert-icon"></div>
+                        <div class="cert-info">
+                            <div class="cert-name">Introduction to Amazon EC2 Systems Manager</div>
+                            <div class="cert-desc"><span class="cert-org">AWS Training & Certification</span><span class="cert-date"><i class="ph ph-calendar-dots"></i>Feb 2021</span></div>
+                        </div>
+                        <div class="cert-actions">
+                            <button class="action-btn" onclick="viewCertificate('Introduction to Amazon EC2 Systems Manager', 'AWS Training & Certification', 'Feb 2021')" title="View Certificate"><i class="ph ph-seal-check"></i></button>
                         </div>
                     </div>
                 </div>
@@ -1236,8 +1584,10 @@
             'AI-050: Developing Generative AI Solutions with Azure OpenAI Service': 'https://drive.google.com/file/d/1U3SxtObAOBWOih-9d_49S5Te6vcgqRs6/view?usp=sharing',
             'AZ-900: Microsoft Azure Fundamentals': 'https://drive.google.com/file/d/1Zfqe17GM-GMR0fmJ4kwfXVB1IQ_BNSc5/view?usp=sharing',
             'WORKSHOP: Monitoring Your Kubernetes Cluster with Datadog': 'https://drive.google.com/file/d/1S8WmEBQ4jn0jozzDZUE5blQncM-y3Rr6/view?usp=sharing',
-            'Linux Unhatched': 'https://drive.google.com/file/d/1fxIdmsJ5TnhZzQi00ir-hWcbO606ywVO/view?usp=sharing',
+            'Linux Unhatched': 'https://drive.google.com/file/d/115Y20qu621EpzW8EvQxc_d_aejmwT4-t/view?usp=sharing',
             'AWS SysOps Administrator': 'https://drive.google.com/file/d/1uQsDLsi0OdKlsW8qL01w122kte3qyzrl/view?usp=sharing',
+            'Introduction to Amazon Elastic Compute Cloud (EC2)': 'https://drive.google.com/file/d/1oQAaO3L9Be_I4gOOPFqGYvZwdClXMM-3/view?usp=sharing',
+            'Introduction to Amazon EC2 Systems Manager': 'https://drive.google.com/file/d/1nQ0wsLqdspmOdkuMVUQrZMBkAqUIHrIB/view?usp=sharing',
             // Data Analysis and Statistics
             'Introduction to R Course': 'https://drive.google.com/file/d/1xzaDcNZYgERPW8fngKaPr-0ktpbpyaUW/view?usp=sharing',
             'Intermediate R Course': 'https://drive.google.com/file/d/1jSRplNzpii1XcNQEGGWSw3cewiI20w4f/view?usp=sharing',
