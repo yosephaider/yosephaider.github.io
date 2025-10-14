@@ -94,7 +94,7 @@
         .featured-section {
             background: #f6f4f4;
             border-radius: 8px;
-            padding: 30px;
+            padding: 25px 20px;
             margin-bottom: 40px;
             color: #000;
         }
@@ -112,84 +112,85 @@
             display: flex;
             align-items: center;
             gap: 12px;
+            margin-left: 10px;
         }
-
-        .aws-badge {
-            background: #FF9900;
-            padding: 4px 8px;
-            border-radius: 4px;
-            font-size: 12px;
-            font-weight: 700;
-            letter-spacing: 0.5px;
+        
+        .featured-title img {
+            width: 35px;
+            height: auto;
+            margin-top: 8px;
         }
 
         .featured-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-            gap: 20px;
+            grid-template-columns: repeat(auto-fill, minmax(205px, 1fr));
+            gap: 15px;
         }
 
         .cert-card {
             background: #fff;
-            border: 1px solid #909090;
+            border: 1px solid #ccd1d7;
             border-radius: 8px;
-            padding: 20px;
+            padding: 12px 18px;
             transition: all 0.3s ease;
-            cursor: pointer;
+            display: inline-grid;
+            align-items: center;
         }
 
         .cert-card:hover {
-            background: rgba(255, 255, 255, 0.15);
+            background: rgba(255, 255, 255, 1);
             transform: translateY(-2px);
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
         }
 
         .cert-card-header {
+            margin-bottom: 2px;
             display: flex;
-            justify-content: space-between;
-            align-items: start;
-            margin-bottom: 12px;
+            align-items: center;
+            justify-content: center;
         }
 
         .cert-card-title {
-            font-size: 16px;
-            font-weight: 600;
-            line-height: 1.3;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 1.2;
             flex: 1;
-            padding-right: 10px;
+            padding-right: 6px;
+            color: #111;
+            text-align: center;
         }
 
         .cert-badge-icon {
             font-size: 24px;
-            color: #FF9900;
+            color: #828282;
+            padding-right: 4px;
         }
 
         .cert-card-meta {
             display: flex;
             flex-direction: column;
-            gap: 4px;
-            font-size: 13px;
+            gap: 2px;
+            font-size: 11px;
             opacity: 0.9;
+            color: #484848;
+            padding-top: 4px;
         }
 
         .cert-card-date {
             display: flex;
             align-items: center;
             gap: 6px;
+            color: #343344;
         }
-
-        .cert-card-actions {
-            margin-top: 12px;
-            display: flex;
-            gap: 8px;
+        
+        .phc-custom {
+            font-size: 16px;
         }
 
         .cert-action-btn {
             background: rgba(255, 255, 255, 0.2);
-            border: 1px solid #909090;
-            color: #444;
-            padding: 6px 12px;
-            border-radius: 4px;
+            border: none;
+            color: #000;
             font-size: 12px;
             cursor: pointer;
             transition: all 0.2s;
@@ -197,6 +198,7 @@
             display: inline-flex;
             align-items: center;
             gap: 4px;
+            margin-left: 10%;
         }
 
         .cert-action-btn:hover {
@@ -278,13 +280,14 @@
             font-weight: 500;
             color: #1a202c;
             margin-bottom: 4px;
-            line-height: 1.3;
+            line-height: 1.2;
         }
 
         .badge-issuer {
             font-size: 12px;
             color: #718096;
             margin-bottom: 4px;
+            line-height: 1.3;
         }
 
         .badge-date {
@@ -552,7 +555,7 @@
                 padding: 12px 16px;
             }
 
-            .cert-date, .cert-status, .cert-actions {
+            .cert-date, .cert-actions {
                 grid-column: 1 / -1;
                 justify-self: end;
                 font-size: 12px;
@@ -593,6 +596,117 @@
                 transform: translateY(0);
             }
         }
+
+        /* Carousel Container */
+        .carousel-container {
+            position: relative;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .carousel-wrapper {
+            flex: 1;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+
+        .carousel-track {
+            display: flex;
+            transition: transform 0.4s ease-in-out;
+        }
+
+        .carousel-page {
+            min-width: 100%;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, auto);
+            gap: 10px;
+        }
+
+        /* Carousel Arrows */
+        .carousel-arrow {
+            background: #fff;
+            border: 1px solid #e2e8f0;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            flex-shrink: 0;
+            font-size: 16px;
+            color: #000;
+        }
+
+        .carousel-arrow:hover {
+            background: #f7fafc;
+            border-color: #cbd5e0;
+            transform: scale(1.1);
+        }
+
+        .carousel-arrow:disabled {
+            opacity: 0.3;
+            cursor: not-allowed;
+            transform: scale(1);
+        }
+
+        .carousel-arrow i {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Carousel Dots */
+        .carousel-dots {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            margin-top: 20px;
+        }
+
+        .carousel-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #cbd5e0;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .carousel-dot.active {
+            background: #4a5568;
+            width: 12px;
+            height: 12px;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 1024px) {
+            .carousel-page {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .carousel-page {
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(auto-fit, auto);
+            }
+
+            .carousel-arrow {
+                width: 35px;
+                height: 35px;
+                font-size: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .carousel-page {
+                grid-template-columns: 1fr;
+            }
+        }
     </style>
 </head>
 <body>
@@ -623,84 +737,344 @@
         <div class="content">
 
             <!-- Featured AWS Certifications -->
-            <!--
             <div class="featured-section">
                 <div class="featured-header">
                     <div class="featured-title">
                         <i class="ph ph-medal"></i>
                         AWS Training & Certifications
-                        <span class="aws-badge">NEW</span>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="aws">
                     </div>
                 </div>
-                <div class="featured-grid">
-                    <div class="cert-card" onclick="viewCertificate('Deploying Serverless Applications', 'AWS Training & Certification', 'Oct 2025')">
-                        <div class="cert-card-header">
-                            <div class="cert-card-title">Deploying Serverless Applications</div>
-                            <i class="ph ph-certificate cert-badge-icon"></i>
-                        </div>
-                        <div class="cert-card-meta">
-                            <div>AWS Training & Certification</div>
-                            <div class="cert-card-date">
-                                <i class="ph ph-calendar"></i>
-                                October 09, 2025
-                            </div>
-                        </div>
-                        <div class="cert-card-actions">
-                            <button class="cert-action-btn">
-                                <i class="ph ph-eye"></i> View
-                            </button>
-                            <button class="cert-action-btn">
-                                <i class="ph ph-download"></i> PDF
-                            </button>
+                
+                <!-- Carousel Container -->
+                <div class="carousel-container">
+                    <!-- Previous Arrow -->
+                    <button class="carousel-arrow carousel-arrow-left" onclick="moveCarousel(-1)">
+                        <i class="ph ph-caret-left"></i>
+                    </button>
+                    
+                    <!-- Carousel Wrapper -->
+                    <div class="carousel-wrapper">
+                        <div class="carousel-track" id="carouselTrack">
+                                <div class="cert-card">
+                                    <div class="cert-card-header">
+                                        <div class="cert-card-title">AWS Technical Essentials (Español LATAM)</div>
+                                        <i class="ph ph-certificate cert-badge-icon"></i>
+                                    </div>
+                                    <div class="cert-card-meta">
+                                        <div>AWS Training & Certification</div>
+                                        <div class="cert-card-date">
+                                            <i class="ph ph-calendar-dots phc-custom"></i>
+                                            July 27, 2025
+                                            <button class="cert-action-btn" onclick="viewCertificate('AWS Technical Essentials (Español LATAM)', 'AWS Training & Certification', 'July 2025')">
+                                                <i class="ph ph-eye"></i> View
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="cert-card">
+                                    <div class="cert-card-header">
+                                        <div class="cert-card-title">Official Practice Question Set: AWS Certified Cloud Practitioner (CLF-C02 -Español LATAM)</div>
+                                        <i class="ph ph-certificate cert-badge-icon"></i>
+                                    </div>
+                                    <div class="cert-card-meta">
+                                        <div>AWS Training & Certification</div>
+                                        <div class="cert-card-date">
+                                            <i class="ph ph-calendar-dots phc-custom"></i>
+                                            July 16, 2025
+                                            <button class="cert-action-btn" onclick="viewCertificate('Official Practice Question Set: AWS Certified Cloud Practitioner (CLF-C02 -Español LATAM)', 'AWS Training & Certification', 'July 2025')">
+                                                <i class="ph ph-eye"></i> View
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="cert-card">
+                                    <div class="cert-card-header">
+                                        <div class="cert-card-title">AWS Cloud Practitioner Essentials (Español LATAM)</div>
+                                        <i class="ph ph-certificate cert-badge-icon"></i>
+                                    </div>
+                                    <div class="cert-card-meta">
+                                        <div>AWS Training & Certification</div>
+                                        <div class="cert-card-date">
+                                            <i class="ph ph-calendar-dots phc-custom"></i>
+                                            July 16, 2025
+                                            <button class="cert-action-btn" onclick="viewCertificate('AWS Cloud Practitioner Essentials (Español LATAM)', 'AWS Training & Certification', 'July 2025')">
+                                                <i class="ph ph-eye"></i> View
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="cert-card">
+                                    <div class="cert-card-header">
+                                        <div class="cert-card-title">AWS Identity and Access Management - Basics (Español LATAM)</div>
+                                        <i class="ph ph-certificate cert-badge-icon"></i>
+                                    </div>
+                                    <div class="cert-card-meta">
+                                        <div>AWS Training & Certification</div>
+                                        <div class="cert-card-date">
+                                            <i class="ph ph-calendar-dots phc-custom"></i>
+                                            October 29, 2024
+                                            <button class="cert-action-btn" onclick="viewCertificate('AWS Identity and Access Management - Basics (Español LATAM)', 'AWS Training & Certification', 'October 2024')">
+                                                <i class="ph ph-eye"></i> View
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="cert-card">
+                                    <div class="cert-card-header">
+                                        <div class="cert-card-title">Domain 1 Review: AWS Certified Cloud Practitioner (CLF-C02 - Español LATAM)</div>
+                                        <i class="ph ph-certificate cert-badge-icon"></i>
+                                    </div>
+                                    <div class="cert-card-meta">
+                                        <div>AWS Training & Certification</div>
+                                        <div class="cert-card-date">
+                                            <i class="ph ph-calendar-dots phc-custom"></i>
+                                           July 16, 2025
+                                            <button class="cert-action-btn" onclick="viewCertificate('Domain 1 Review: AWS Certified Cloud Practitioner (CLF-C02 - Español LATAM)', 'AWS Training & Certification', 'July 2025')">
+                                                <i class="ph ph-eye"></i> View
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="cert-card">
+                                    <div class="cert-card-header">
+                                        <div class="cert-card-title">Domain 2 Review: AWS Certified Cloud Practitioner (CLF-C02 - Español LATAM)</div>
+                                        <i class="ph ph-certificate cert-badge-icon"></i>
+                                    </div>
+                                    <div class="cert-card-meta">
+                                        <div>AWS Training & Certification</div>
+                                        <div class="cert-card-date">
+                                            <i class="ph ph-calendar-dots phc-custom"></i>
+                                            July 27, 2025
+                                            <button class="cert-action-btn" onclick="viewCertificate('Domain 2 Review: AWS Certified Cloud Practitioner (CLF-C02 - Español LATAM)', 'AWS Training & Certification', 'July 2025')">
+                                                <i class="ph ph-eye"></i> View
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="cert-card">
+                                    <div class="cert-card-header">
+                                        <div class="cert-card-title">Domain 3 Review: AWS Certified Cloud Practitioner (CLF-C02 - Español LATAM)</div>
+                                        <i class="ph ph-certificate cert-badge-icon"></i>
+                                    </div>
+                                    <div class="cert-card-meta">
+                                        <div>AWS Training & Certification</div>
+                                        <div class="cert-card-date">
+                                            <i class="ph ph-calendar-dots phc-custom"></i>
+                                            July 27, 2025
+                                            <button class="cert-action-btn" onclick="viewCertificate('Domain 3 Review: AWS Certified Cloud Practitioner (CLF-C02 - Español LATAM)', 'AWS Training & Certification', 'July 2025')">
+                                                <i class="ph ph-eye"></i> View
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="cert-card">
+                                    <div class="cert-card-header">
+                                        <div class="cert-card-title">Domain 4 Review: AWS Certified Cloud Practitioner (CLF-C02 - Español LATAM)</div>
+                                        <i class="ph ph-certificate cert-badge-icon"></i>
+                                    </div>
+                                    <div class="cert-card-meta">
+                                        <div>AWS Training & Certification</div>
+                                        <div class="cert-card-date">
+                                            <i class="ph ph-calendar-dots phc-custom"></i>
+                                            July 28, 2025
+                                            <button class="cert-action-btn" onclick="viewCertificate('Domain 4 Review: AWS Certified Cloud Practitioner (CLF-C02 - Español LATAM)', 'AWS Training & Certification', 'July 2025')">
+                                                <i class="ph ph-eye"></i> View
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="cert-card">
+                                    <div class="cert-card-header">
+                                        <div class="cert-card-title">Exam Prep Overview: AWS Certified Cloud Practitioner (CLF-C02 - Español LATAM)</div>
+                                        <i class="ph ph-certificate cert-badge-icon"></i>
+                                    </div>
+                                    <div class="cert-card-meta">
+                                        <div>AWS Training & Certification</div>
+                                        <div class="cert-card-date">
+                                            <i class="ph ph-calendar-dots phc-custom"></i>
+                                            July 16, 2025
+                                            <button class="cert-action-btn" onclick="viewCertificate('Exam Prep Overview: AWS Certified Cloud Practitioner (CLF-C02 - Español LATAM)', 'AWS Training & Certification', 'July 2025')">
+                                                <i class="ph ph-eye"></i> View
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="cert-card">
+                                    <div class="cert-card-header">
+                                        <div class="cert-card-title">Exam Prep Plan Overview: AWS Certified Cloud Practitioner (CLF-C02 - Español LATAM)</div>
+                                        <i class="ph ph-certificate cert-badge-icon"></i>
+                                    </div>
+                                    <div class="cert-card-meta">
+                                        <div>AWS Training & Certification</div>
+                                        <div class="cert-card-date">
+                                            <i class="ph ph-calendar-dots phc-custom"></i>
+                                            July 16, 2025
+                                            <button class="cert-action-btn" onclick="viewCertificate('Exam Prep Plan Overview: AWS Certified Cloud Practitioner (CLF-C02 - Español LATAM)', 'AWS Training & Certification', 'July 2025')">
+                                                <i class="ph ph-eye"></i> View
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="cert-card">
+                                    <div class="cert-card-header">
+                                        <div class="cert-card-title">Exam Prep Summary: AWS Certified Cloud Practitioner (CLF-C02 - Español LATAM)</div>
+                                        <i class="ph ph-certificate cert-badge-icon"></i>
+                                    </div>
+                                    <div class="cert-card-meta">
+                                        <div>AWS Training & Certification</div>
+                                        <div class="cert-card-date">
+                                            <i class="ph ph-calendar-dots phc-custom"></i>
+                                            July 26, 2025
+                                            <button class="cert-action-btn" onclick="viewCertificate('Exam Prep Summary: AWS Certified Cloud Practitioner (CLF-C02 - Español LATAM)', 'AWS Training & Certification', 'July 2025')">
+                                                <i class="ph ph-eye"></i> View
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="cert-card">
+                                    <div class="cert-card-header">
+                                        <div class="cert-card-title">Getting Started with DevOps on AWS (Español LATAM)</div>
+                                        <i class="ph ph-certificate cert-badge-icon"></i>
+                                    </div>
+                                    <div class="cert-card-meta">
+                                        <div>AWS Training & Certification</div>
+                                        <div class="cert-card-date">
+                                            <i class="ph ph-calendar-dots phc-custom"></i>
+                                            October 12, 2025
+                                            <button class="cert-action-btn" onclick="viewCertificate('Getting Started with DevOps on AWS (Español LATAM)', 'AWS Training & Certification', 'October 2025')">
+                                                <i class="ph ph-eye"></i> View
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="cert-card">
+                                    <div class="cert-card-header">
+                                        <div class="cert-card-title">AWS Cloud Quest: Cloud Practitioner</div>
+                                        <i class="ph ph-certificate cert-badge-icon"></i>
+                                    </div>
+                                    <div class="cert-card-meta">
+                                        <div>AWS Training & Certification</div>
+                                        <div class="cert-card-date">
+                                            <i class="ph ph-calendar-dots phc-custom"></i>
+                                            October 11, 2025
+                                            <button class="cert-action-btn" onclick="viewCertificate('AWS Cloud Quest: Cloud Practitioner', 'AWS Training & Certification', 'October 2025')">
+                                                <i class="ph ph-eye"></i> View
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="cert-card">
+                                    <div class="cert-card-header">
+                                        <div class="cert-card-title">Deploying Serverless Applications (Español LATAM)</div>
+                                        <i class="ph ph-certificate cert-badge-icon"></i>
+                                    </div>
+                                    <div class="cert-card-meta">
+                                        <div>AWS Training & Certification</div>
+                                        <div class="cert-card-date">
+                                            <i class="ph ph-calendar-dots phc-custom"></i>
+                                            October 09, 2025
+                                            <button class="cert-action-btn" onclick="viewCertificate('Deploying Serverless Applications (Español LATAM)', 'AWS Training & Certification', 'October 2025')">
+                                                <i class="ph ph-eye"></i> View
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="cert-card">
+                                    <div class="cert-card-header">
+                                        <div class="cert-card-title">XXXXXXXXXX</div>
+                                        <i class="ph ph-certificate cert-badge-icon"></i>
+                                    </div>
+                                    <div class="cert-card-meta">
+                                        <div>AWS Training & Certification</div>
+                                        <div class="cert-card-date">
+                                            <i class="ph ph-calendar-dots phc-custom"></i>
+                                            August 2025
+                                            <button class="cert-action-btn" onclick="viewCertificate('XXXXXXXXXX', 'AWS Training & Certification', 'Aug 2025')">
+                                                <i class="ph ph-eye"></i> View
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="cert-card">
+                                    <div class="cert-card-header">
+                                        <div class="cert-card-title">XXXXXXXXXX</div>
+                                        <i class="ph ph-certificate cert-badge-icon"></i>
+                                    </div>
+                                    <div class="cert-card-meta">
+                                        <div>AWS Training & Certification</div>
+                                        <div class="cert-card-date">
+                                            <i class="ph ph-calendar-dots phc-custom"></i>
+                                            August 2025
+                                            <button class="cert-action-btn" onclick="viewCertificate('XXXXXXXXXX', 'AWS Training & Certification', 'Aug 2025')">
+                                                <i class="ph ph-eye"></i> View
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="cert-card">
+                                    <div class="cert-card-header">
+                                        <div class="cert-card-title">XXXXXXXXXX</div>
+                                        <i class="ph ph-certificate cert-badge-icon"></i>
+                                    </div>
+                                    <div class="cert-card-meta">
+                                        <div>AWS Training & Certification</div>
+                                        <div class="cert-card-date">
+                                            <i class="ph ph-calendar-dots phc-custom"></i>
+                                            August 2025
+                                            <button class="cert-action-btn" onclick="viewCertificate('XXXXXXXXXX', 'AWS Training & Certification', 'Aug 2025')">
+                                                <i class="ph ph-eye"></i> View
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="cert-card">
+                                    <div class="cert-card-header">
+                                        <div class="cert-card-title">XXXXXXXXXX</div>
+                                        <i class="ph ph-certificate cert-badge-icon"></i>
+                                    </div>
+                                    <div class="cert-card-meta">
+                                        <div>AWS Training & Certification</div>
+                                        <div class="cert-card-date">
+                                            <i class="ph ph-calendar-dots phc-custom"></i>
+                                            August 2025
+                                            <button class="cert-action-btn" onclick="viewCertificate('XXXXXXXXXX', 'AWS Training & Certification', 'Aug 2025')">
+                                                <i class="ph ph-eye"></i> View
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Agregar más -->
                         </div>
                     </div>
                     
-                    <div class="cert-card" onclick="viewCertificate('AWS Solutions Architect', 'AWS Training & Certification', 'Sep 2025')">
-                        <div class="cert-card-header">
-                            <div class="cert-card-title">AWS Solutions Architect - Associate</div>
-                            <i class="ph ph-certificate cert-badge-icon"></i>
-                        </div>
-                        <div class="cert-card-meta">
-                            <div>AWS Training & Certification</div>
-                            <div class="cert-card-date">
-                                <i class="ph ph-calendar"></i>
-                                September 2025
-                            </div>
-                        </div>
-                        <div class="cert-card-actions">
-                            <button class="cert-action-btn">
-                                <i class="ph ph-eye"></i> View
-                            </button>
-                            <button class="cert-action-btn">
-                                <i class="ph ph-download"></i> PDF
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="cert-card" onclick="viewCertificate('AWS Cloud Practitioner Essentials', 'AWS Training & Certification', 'Aug 2025')">
-                        <div class="cert-card-header">
-                            <div class="cert-card-title">AWS Cloud Practitioner Essentials</div>
-                            <i class="ph ph-certificate cert-badge-icon"></i>
-                        </div>
-                        <div class="cert-card-meta">
-                            <div>AWS Training & Certification</div>
-                            <div class="cert-card-date">
-                                <i class="ph ph-calendar"></i>
-                                August 2025
-                            </div>
-                        </div>
-                        <div class="cert-card-actions">
-                            <button class="cert-action-btn">
-                                <i class="ph ph-eye"></i> View
-                            </button>
-                            <button class="cert-action-btn">
-                                <i class="ph ph-download"></i> PDF
-                            </button>
-                        </div>
-                    </div>
+                    <!-- Next Arrow -->
+                    <button class="carousel-arrow carousel-arrow-right" onclick="moveCarousel(1)">
+                        <i class="ph ph-caret-right"></i>
+                    </button>
                 </div>
+                
+                <!-- Carousel Dots -->
+                <div class="carousel-dots" id="carouselDots"></div>
             </div>
-            -->
 
             <!-- Digital Badges Section -->
             <div class="badges-section">
@@ -747,6 +1121,16 @@
                         <div class="badge-issuer">Cisco</div>
                         <div class="badge-date">Issued Jan 26, 2025</div>
                     </div>
+
+                    <div class="badge-item" onclick="window.open('https://www.credly.com/badges/6788d01e-6acf-4565-87ac-548636db9c57/public_url', '_blank')">
+                        <div class="badge-image">
+                            <img src="https://images.credly.com/images/f25ec9d4-c59d-49b9-944a-f160012e81cd/image.png" alt="badge">
+                        </div>
+                        <div class="badge-name">Linux Unhatched</div>
+                        <div class="badge-issuer">Cisco</div>
+                        <div class="badge-date">Issued Jan 26, 2025</div>
+                    </div>
+
                 </div>
             </div>
 
@@ -1567,6 +1951,21 @@
     <script>
         // Certificate PDF links mapping
         const certificatePDFs = {
+            // AWS Training & Certifications
+            'AWS Technical Essentials (Español LATAM)': 'https://drive.google.com/file/d/17ojdlvAMFQ9aBfA94Rwukbhhzfaj7dmc/view?usp=sharing',
+            'Official Practice Question Set: AWS Certified Cloud Practitioner (CLF-C02 -Español LATAM)': 'https://drive.google.com/file/d/1YC7GRojkoUUhsFUzBVeOn557ssAowaYv/view?usp=sharing',
+            'AWS Cloud Practitioner Essentials (Español LATAM)': 'https://drive.google.com/file/d/1u425DwejbLWMXWfbJWChBiaJiXByR14k/view?usp=sharing',
+            'AWS Identity and Access Management - Basics (Español LATAM)': 'https://drive.google.com/file/d/1DRFFsetY-jZpiMoeaUp1IIzpStz4sWmU/view?usp=sharing',
+            'Domain 1 Review: AWS Certified Cloud Practitioner (CLF-C02 - Español LATAM)': 'https://drive.google.com/file/d/1usAyuEnvmRsrUwzustB70f3CUxfZvgQ1/view?usp=sharing',
+            'Domain 2 Review: AWS Certified Cloud Practitioner (CLF-C02 - Español LATAM)': 'https://drive.google.com/file/d/1VBa3lxg4MFcWjASjNWv_whIASaBpT3yp/view?usp=sharing',
+            'Domain 3 Review: AWS Certified Cloud Practitioner (CLF-C02 - Español LATAM)': 'https://drive.google.com/file/d/12HxEhLSuGJ9E8C9HfUDgaPfAtZhonxJ_/view?usp=sharing',
+            'Domain 4 Review: AWS Certified Cloud Practitioner (CLF-C02 - Español LATAM)': 'https://drive.google.com/file/d/1OvXxOR6PNZF90Q-HZNocnIAFq2W96yyP/view?usp=sharing',
+            'Exam Prep Overview: AWS Certified Cloud Practitioner (CLF-C02 - Español LATAM)': 'https://drive.google.com/file/d/1oRf_yZ4kujcyPVn7uJRhiaEvgkXqAj0T/view?usp=sharing',
+            'Exam Prep Plan Overview: AWS Certified Cloud Practitioner (CLF-C02 - Español LATAM)': 'https://drive.google.com/file/d/1Es58MmIhS1taC4uItsGp3Xsrx8k4Zg_l/view?usp=sharing',
+            'Exam Prep Summary: AWS Certified Cloud Practitioner (CLF-C02 - Español LATAM)': 'https://drive.google.com/file/d/1vP_I606BLu1BLfRmImVI2E_p_3cUBk73/view?usp=sharing',
+            'Getting Started with DevOps on AWS (Español LATAM)': 'https://drive.google.com/file/d/15ALKAw0jHWwnQAYiwtqxSaRXS5LuOdTL/view?usp=sharing',
+            'AWS Cloud Quest: Cloud Practitioner': 'https://drive.google.com/file/d/1dY0FfhSG-8QJ9kHWAP-pZMP3Q9nA0wkC/view?usp=sharing',
+            'Deploying Serverless Applications (Español LATAM)': 'https://drive.google.com/file/d/1aHKs-eOME1qhmAj9jRLaCAtLm1J6xNYg/view?usp=sharing',
             // Programming and Development
             'Python Programming Course': 'https://drive.google.com/file/d/1iOYorgZhAb2gKKrdrOwmoPZ-G20-fJm5/view?usp=sharing',
             'Introduction to PHP': 'https://drive.google.com/file/d/15rmGabCvxXyewU4jv7FDN5Wb8Cfajq8I/view?usp=sharing',
@@ -1807,6 +2206,66 @@
             const totalCerts = document.querySelectorAll('.cert-row').length;
             document.getElementById('totalCerts').textContent = totalCerts + '+';
         }
+
+        /*** Lo del Caruosel ***/
+        const track = document.getElementById('carouselTrack');
+        const cards = Array.from(track.querySelectorAll('.cert-card'));
+        const itemsPerPage = 8;
+        let currentPage = 0;
+
+        // Crear páginas dinámicamente
+        const pages = [];
+        for (let i = 0; i < cards.length; i += itemsPerPage) {
+            const page = document.createElement('div');
+            page.classList.add('carousel-page');
+            cards.slice(i, i + itemsPerPage).forEach(c => page.appendChild(c));
+            pages.push(page);
+        }
+
+        // Limpiar y agregar páginas al track
+        track.innerHTML = '';
+        pages.forEach(p => track.appendChild(p));
+
+        // Crear dots dinámicamente
+        const dotsContainer = document.getElementById('carouselDots');
+        dotsContainer.innerHTML = '';
+        pages.forEach((_, index) => {
+            const dot = document.createElement('div');
+            dot.classList.add('carousel-dot');
+            if (index === 0) dot.classList.add('active');
+            dot.addEventListener('click', () => moveToPage(index));
+            dotsContainer.appendChild(dot);
+        });
+
+        const updateCarousel = () => {
+            track.style.transform = `translateX(-${currentPage * 100}%)`;
+            document.querySelectorAll('.carousel-dot').forEach((dot, idx) => {
+                dot.classList.toggle('active', idx === currentPage);
+            });
+            updateArrows();
+        };
+
+        const updateArrows = () => {
+            document.querySelector('.carousel-arrow-left').disabled = currentPage === 0;
+            document.querySelector('.carousel-arrow-right').disabled = currentPage === pages.length - 1;
+        };
+
+        const moveCarousel = (direction) => {
+            currentPage += direction;
+            if (currentPage < 0) currentPage = 0;
+            if (currentPage >= pages.length) currentPage = pages.length - 1;
+            updateCarousel();
+        };
+
+        const moveToPage = (index) => {
+            currentPage = index;
+            updateCarousel();
+        };
+
+        // Inicializar al cargar
+        updateCarousel();
+
+        
     </script>
 </body>
 </html>
