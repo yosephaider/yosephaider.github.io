@@ -335,14 +335,21 @@ body {
 }
 
 .filter-btn {
-    background: #fff;
-    border: 1px solid #e2e8f0;
-    color: #555;
+    display: inline-block;
+    background: linear-gradient(to bottom, #fefefe 0%, #dfdfdf 100%);
+    border: 1px solid #ccc;
+    color: #5c5b5b;
     padding: 4px 16px;
     border-radius: 6px;
     cursor: pointer;
-    font-size: 14px;
+    font-size: 13px;
     transition: all 0.2s;
+    transform: skew(-30deg);
+}
+
+.filter-btn span {
+    display: inline-block;
+    transform: skew(30deg);
 }
 
 .filter-btn:hover {
