@@ -59,6 +59,33 @@ const certificatePDFs = {
     'Right Size Your Amazon EC2 Workload': 'https://drive.google.com/file/d/1d3jKYP9A5lJfbXSSG_08SBRXqGO6NXUz/view?usp=sharing',
     'Scaling Serverless Architectures': 'https://drive.google.com/file/d/14MC8EUrrQ-dgH_G9YgGfM6BAFpp6X0iz/view?usp=sharing',
     'Security and Observability for Serverless Applications': 'https://drive.google.com/file/d/1D-BWCwO5fdCFtVND8c06lG08pXzzK3zX/view?usp=sharing',
+    'Amazon EKS - Knowledge Badge Readiness Path': 'https://drive.google.com/file/d/1F2NKmADHSTcD3ijo25y7Ngv0c0NbjXl_/view?usp=sharing',
+    'Amazon EKS Deployment Options': 'https://drive.google.com/file/d/1CyM-mJsf3CqZtOhqW33uw5wyRk25jHvU/view?usp=sharing',
+    'Amazon EKS Knowledge Badge Assessment': 'https://drive.google.com/file/d/1jstWi1ftzw6Rk0WratyBOHhDcVpQIcZw/view?usp=sharing',
+    'Amazon EKS Networking': 'https://drive.google.com/file/d/1WnEPyha4I07f-E5MC3W7Xoku_m0-MthH/view?usp=sharing',
+    'Amazon EKS Security': 'https://drive.google.com/file/d/1gi6u71sIoZ1ELxUQZxXzLEwZLiguRfJT/view?usp=sharing',
+    'Amazon FSx for Lustre Primer': 'https://drive.google.com/file/d/10Qtox7k0MJZdg6KM8J4XuU9P9Y7j2Y3U/view?usp=sharing',
+    'Amazon FSx for Windows File Server Primer': 'https://drive.google.com/file/d/1EdITj2Kf1IiVc9wM3N3j-wxFhYl84UDZ/view?usp=sharing',
+    'Autoscaling and Cost Optimization': 'https://drive.google.com/file/d/1MwSN8J0n7_UuxwfnnwYrsEmvfq_yBTeY/view?usp=sharing',
+    'AWS Elastic Disaster Recovery - A Technical Introduction': 'https://drive.google.com/file/d/1kq0UXMUUhMR_ekth0lRCTKgLM7sjbjQb/view?usp=sharing',
+    'AWS for Media & Entertainment Content Production Learning Plan Assessment': 'https://drive.google.com/file/d/10jEcqWqzqbU--NiH9eZiK1327paQseeB/view?usp=sharing',
+    'AWS Security Best Practices: Monitoring and Alerting': 'https://drive.google.com/file/d/1NRWPRfBSMOrKQM0NEZAvRzQJS97Cos51/view?usp=sharing',
+    'AWS Security Best Practices: Network Infrastructure': 'https://drive.google.com/file/d/10y5p9-vH3PcWXcM8qWTSBgTcspQmwW5e/view?usp=sharing',
+    'AWS Security Incident Response - Compromised IAM Credentials Use Case': 'https://drive.google.com/file/d/1CrNWMbmFuqZUEuY1KulObUWOd-canqWd/view?usp=sharing',
+    'AWS Security Incident Response Overview': 'https://drive.google.com/file/d/1ndW7ZYUKO5Aw7EpbzgIyaZTwC_GHJneJ/view?usp=sharing',
+    'AWS SimuLearn: Core Security Concepts': 'https://drive.google.com/file/d/17bWZ2pZ0XHU78yTTfNqzCsoQpY5I-FuA/view?usp=sharing',
+    'Basic Observability for Amazon EKS': 'https://drive.google.com/file/d/1J_r5AxhLOf9L8eGiJelbCDOTOuwfNVwX/view?usp=sharing',
+    'Cloud Essentials - Knowledge Badge Readiness Path (includes Labs)': 'https://drive.google.com/file/d/1w1cogVz7MBjH3JqJTzrL96ntsd9L3R-a/view?usp=sharing',
+    'Deep Dive on Container Security': 'https://drive.google.com/file/d/1XQ-fDY5UuYOwGvFtNDBv3Z-_R5IO15Ei/view?usp=sharing',
+    'Deploying Microservices to Amazon EKS': 'https://drive.google.com/file/d/10ffcYsBSQrICGoN-EkthDIIfIN7DMx7S/view?usp=sharing',
+    'Getting Started with AWS Storage': 'https://drive.google.com/file/d/1AxCb3OkiAUHK32JiYYa72qsAnHQVsscA/view?usp=sharing',
+    'GitOps for Amazon EKS Automation': 'https://drive.google.com/file/d/1iCiym2pObFEKnGQSmrl_YI2K3XUMkCLS/view?usp=sharing',
+    'Introduction to Amazon Simple Storage Service (S3)': 'https://drive.google.com/file/d/1ELSNZRS6XFYBnJlXaPB-gaItM4Xm-5Bb/view?usp=sharing',
+    'Introduction to AWS Identity and Access Management (IAM)': 'https://drive.google.com/file/d/1pw_a5dPSLUT1055PAxogy4G3WSbXZ-Sr/view?usp=sharing',
+    'Protect Your Web-facing Workloads with AWS Security Services': 'https://drive.google.com/file/d/123CoYxQwQ2pRqOzbcgYCIq4KNWiFnC4-/view?usp=sharing',
+    'Security Governance at Scale – Technical (Digital)': 'https://drive.google.com/file/d/1W8zCbB5V_yiELjqyy8DsVtYfUYkxcfW7/view?usp=sharing',
+    'The Amazon EKS Cluster': 'https://drive.google.com/file/d/142bEhPbDbrAHuNDplmfOv_bkVJR7k1dU/view?usp=sharing',
+    'Threat Modeling for Builders Workshop': 'https://drive.google.com/file/d/1wVcRSRaiCSVVfV9Zy80aXk4BbllI5obZ/view?usp=sharing',
     // AWS Educate
     'AWS Emerging Talent Community Digital Badge': 'https://drive.google.com/file/d/1VfedhXauOo5Ayyv04Okjiu-88eYQ5VWK/view?usp=sharing',
     // Programming and Development
@@ -305,7 +332,7 @@ window.onload = function() {
 /*** Lo del Caruosel ***/
 const track = document.getElementById('carouselTrack');
 const cards = Array.from(track.querySelectorAll('.cert-card'));
-const itemsPerPage = 8;
+const itemsPerPage = 12;
 let currentPage = 0;
 
 // Crear páginas dinámicamente
