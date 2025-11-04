@@ -105,8 +105,14 @@ body {
     margin-left: 10px;
 }
 
-.featured-title img {
+.featured-title > .aws {
     width: 88px;
+    height: auto;
+    margin-top: 6px;
+}
+
+.featured-title > .datadog {
+    width: 170px;
     height: auto;
     margin-top: 6px;
 }
@@ -140,8 +146,12 @@ body {
     justify-content: center;
 }
 
-.cert-card-header img {
+.cert-card-header > .aws-mini {
     width: 27px;
+}
+
+.cert-card-header > .datadog-mini {
+    width: 24px;
 }
 
 .cert-card-title {

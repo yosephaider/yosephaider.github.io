@@ -88,6 +88,17 @@ const certificatePDFs = {
     'Threat Modeling for Builders Workshop': 'https://drive.google.com/file/d/1wVcRSRaiCSVVfV9Zy80aXk4BbllI5obZ/view?usp=sharing',
     // AWS Educate
     'AWS Emerging Talent Community Digital Badge': 'https://drive.google.com/file/d/1VfedhXauOo5Ayyv04Okjiu-88eYQ5VWK/view?usp=sharing',
+    // Datadog
+    'WORKSHOP: Monitoring Your Kubernetes Cluster with Datadog': 'https://drive.google.com/file/d/1S8WmEBQ4jn0jozzDZUE5blQncM-y3Rr6/view?usp=sharing',
+    'Getting Started with APM Metrics & Traces': 'https://drive.google.com/file/d/1B2f0XtWKPIeUnpjGCQu0_SyE37UhMmKG/view?usp=sharing',
+    'Getting Started with Infrastructure and Cloud Network Monitoring': 'https://drive.google.com/file/d/1wAvvWsyKv1TLTPCGpDa9Sn0i6xY5KAY7/view?usp=sharing',
+    'Getting Started with Integrations': 'https://drive.google.com/file/d/1ID9HodJ8aUAhpJ9HkAd-aPDAj8I_c3Wx/view?usp=sharing',
+    'Getting Started with Service Level Objectives (SLOs)': 'https://drive.google.com/file/d/18G_tdocBxy2f7haWH8LWUHyS1a-Q_EgP/view?usp=sharing',
+    'Getting Started with Universal Service Monitoring (USM)': 'https://drive.google.com/file/d/1D7FKKKVAZDLkkMsvDAcEnfIXq5k_ncg4/view?usp=sharing',
+    'Introduction to Incident Management': 'https://drive.google.com/file/d/1HvE4tyfgNmcMVtsR_-0Pjm7rHIFCKlnA/view?usp=sharing',
+    'Tagging Best Practices': 'https://drive.google.com/file/d/1aptTAnlWSk13WZ-HMqXJ1sPPPgBC0Ira/view?usp=sharing',
+    'The Agent on a Host': 'https://drive.google.com/file/d/1TEoHKNQv8ST5BzMf4Ns3yiCs0BlxIShY/view?usp=sharing',
+    'The Agent on Docker': 'https://drive.google.com/file/d/1koZ7W4lHp7WhpWsPOuB84eGlwz0Mg8TX/view?usp=sharing',
     // Programming and Development
     'Python Programming Course': 'https://drive.google.com/file/d/1iOYorgZhAb2gKKrdrOwmoPZ-G20-fJm5/view?usp=sharing',
     'Introduction to PHP': 'https://drive.google.com/file/d/15rmGabCvxXyewU4jv7FDN5Wb8Cfajq8I/view?usp=sharing',
@@ -97,6 +108,7 @@ const certificatePDFs = {
     'Java Fundamentals Diploma': 'https://drive.google.com/file/d/1BszqEWhStHhC40B0zri-gvSu5knJoVqb/view?usp=sharing',
     'Python Programming': 'https://drive.google.com/file/d/1SViDxXc3UgpLPm0PlpcCl4_gewyrqF5o/view?usp=sharing',
     'XHTML - XML - CSS': 'https://drive.google.com/file/d/1XkXv6Iucqa2Uc-5Y8UvEn_sYRdeppwnR/view?usp=sharing',
+    'How to Program for Entrepreneurs - HTML and CSS': 'https://drive.google.com/file/d/1GCxCq0P8tS7OV0_rJxwd7vPnt_ai7iQ4/view?usp=sharing',
     'C++ Programming in Microcontrollers and Arduino': 'https://drive.google.com/file/d/1vjK-TDNgJn2Rmf5RSXrMXlcLUJzrZzZC/view?usp=sharing',
     // DevOps and System Administration
     'CentOS and Red Hat Linux to Certified System Administrator': 'https://drive.google.com/file/d/1GVrAmYFpxi5J5KCt6kHMvSBSVnJvP27a/view?usp=sharing',
@@ -104,7 +116,6 @@ const certificatePDFs = {
     'AWS Cloud Practitioner': 'https://drive.google.com/file/d/1IBzwop6xuIwthtj4ekVUYFNZ9KJPSZvj/view?usp=sharing',
     'AI-050: Developing Generative AI Solutions with Azure OpenAI Service': 'https://drive.google.com/file/d/1U3SxtObAOBWOih-9d_49S5Te6vcgqRs6/view?usp=sharing',
     'AZ-900: Microsoft Azure Fundamentals': 'https://drive.google.com/file/d/1Zfqe17GM-GMR0fmJ4kwfXVB1IQ_BNSc5/view?usp=sharing',
-    'WORKSHOP: Monitoring Your Kubernetes Cluster with Datadog': 'https://drive.google.com/file/d/1S8WmEBQ4jn0jozzDZUE5blQncM-y3Rr6/view?usp=sharing',
     'Linux Unhatched': 'https://drive.google.com/file/d/115Y20qu621EpzW8EvQxc_d_aejmwT4-t/view?usp=sharing',
     'AWS SysOps Administrator': 'https://drive.google.com/file/d/1uQsDLsi0OdKlsW8qL01w122kte3qyzrl/view?usp=sharing',
     'Introduction to Amazon Elastic Compute Cloud (EC2)': 'https://drive.google.com/file/d/1oQAaO3L9Be_I4gOOPFqGYvZwdClXMM-3/view?usp=sharing',
@@ -129,7 +140,6 @@ const certificatePDFs = {
     'Entrepreneurship in Silicon Valley': 'https://drive.google.com/file/d/1pqIlFfrooVPsGUfrophgnJt6CH8lzDPZ/view?usp=sharing',
     'Basic Personal Finance Course: Finance for Mortals': 'https://drive.google.com/file/d/1_wYxdrLeUzb5Y9bO3CEctrQXGBMtr6Bg/view?usp=sharing',
     'Business Training Certificate - BOD Entrepreneurs Center': 'https://drive.google.com/file/d/1d0G9j3LLFkTg1-yms00Fisi5MySMnXOe/view?usp=sharing',
-    'How to Program for Entrepreneurs - HTML and CSS': 'https://drive.google.com/file/d/1GCxCq0P8tS7OV0_rJxwd7vPnt_ai7iQ4/view?usp=sharing',
     'Resources and Tools for Entrepreneurship': 'https://drive.google.com/file/d/1JjALYNzDUa5ehGiYNFUjq9e2JZJNFsrn/view?usp=sharing',
     'Legislation for Entrepreneurs': 'https://drive.google.com/file/d/1oOFngW7wFx9IggYZ-BCCg95G1Uqt6K4-/view?usp=sharing',
     'Dare to Act': 'https://drive.google.com/file/d/13u1rdV-pRPG2iZaGHVgsq0CqhHCN9kWf/view?usp=sharing',
@@ -329,61 +339,86 @@ window.onload = function() {
     document.getElementById('totalCerts').textContent = totalCerts + '+';
 }
 
-/*** Lo del Caruosel ***/
-const track = document.getElementById('carouselTrack');
-const cards = Array.from(track.querySelectorAll('.cert-card'));
-const itemsPerPage = 12;
-let currentPage = 0;
 
-// Crear páginas dinámicamente
-const pages = [];
-for (let i = 0; i < cards.length; i += itemsPerPage) {
-    const page = document.createElement('div');
-    page.classList.add('carousel-page');
-    cards.slice(i, i + itemsPerPage).forEach(c => page.appendChild(c));
-    pages.push(page);
+/*** Lo del Caruosel ***/
+function initCarousel({ trackId, dotsId, leftArrowSelector, rightArrowSelector, itemsPerPage = 12 }) {
+    const track = document.getElementById(trackId);
+    const cards = Array.from(track.querySelectorAll('.cert-card'));
+    let currentPage = 0;
+
+    // Crear páginas dinámicamente
+    const pages = [];
+    for (let i = 0; i < cards.length; i += itemsPerPage) {
+        const page = document.createElement('div');
+        page.classList.add('carousel-page');
+        cards.slice(i, i + itemsPerPage).forEach(c => page.appendChild(c));
+        pages.push(page);
+    }
+
+    // Limpiar y agregar páginas al track
+    track.innerHTML = '';
+    pages.forEach(p => track.appendChild(p));
+
+    // Crear dots dinámicamente
+    const dotsContainer = document.getElementById(dotsId);
+    dotsContainer.innerHTML = '';
+    pages.forEach((_, index) => {
+        const dot = document.createElement('div');
+        dot.classList.add('carousel-dot');
+        if (index === 0) dot.classList.add('active');
+        dot.addEventListener('click', () => moveToPage(index));
+        dotsContainer.appendChild(dot);
+    });
+
+    const updateCarousel = () => {
+        track.style.transform = `translateX(-${currentPage * 100}%)`;
+        dotsContainer.querySelectorAll('.carousel-dot').forEach((dot, idx) => {
+            dot.classList.toggle('active', idx === currentPage);
+        });
+        updateArrows();
+    };
+
+    const updateArrows = () => {
+        document.querySelector(leftArrowSelector).disabled = currentPage === 0;
+        document.querySelector(rightArrowSelector).disabled = currentPage === pages.length - 1;
+    };
+
+    const moveCarousel = (direction) => {
+        currentPage += direction;
+        if (currentPage < 0) currentPage = 0;
+        if (currentPage >= pages.length) currentPage = pages.length - 1;
+        updateCarousel();
+    };
+
+    const moveToPage = (index) => {
+        currentPage = index;
+        updateCarousel();
+    };
+
+    // Conectar flechas
+    document.querySelector(leftArrowSelector).addEventListener('click', () => moveCarousel(-1));
+    document.querySelector(rightArrowSelector).addEventListener('click', () => moveCarousel(1));
+
+    // Inicializar
+    updateCarousel();
 }
 
-// Limpiar y agregar páginas al track
-track.innerHTML = '';
-pages.forEach(p => track.appendChild(p));
-
-// Crear dots dinámicamente
-const dotsContainer = document.getElementById('carouselDots');
-dotsContainer.innerHTML = '';
-pages.forEach((_, index) => {
-    const dot = document.createElement('div');
-    dot.classList.add('carousel-dot');
-    if (index === 0) dot.classList.add('active');
-    dot.addEventListener('click', () => moveToPage(index));
-    dotsContainer.appendChild(dot);
+initCarousel({
+    trackId: 'carouselTrackAWS',
+    dotsId: 'carouselDotsAWS',
+    leftArrowSelector: '.carousel-arrow-left-aws',
+    rightArrowSelector: '.carousel-arrow-right-aws',
+    itemsPerPage: 12
 });
 
-const updateCarousel = () => {
-    track.style.transform = `translateX(-${currentPage * 100}%)`;
-    document.querySelectorAll('.carousel-dot').forEach((dot, idx) => {
-        dot.classList.toggle('active', idx === currentPage);
-    });
-    updateArrows();
-};
+initCarousel({
+    trackId: 'carouselTrackDatadog',
+    dotsId: 'carouselDotsDatadog',
+    leftArrowSelector: '.carousel-arrow-left-datadog',
+    rightArrowSelector: '.carousel-arrow-right-datadog',
+    itemsPerPage: 8
+});
 
-const updateArrows = () => {
-    document.querySelector('.carousel-arrow-left').disabled = currentPage === 0;
-    document.querySelector('.carousel-arrow-right').disabled = currentPage === pages.length - 1;
-};
 
-const moveCarousel = (direction) => {
-    currentPage += direction;
-    if (currentPage < 0) currentPage = 0;
-    if (currentPage >= pages.length) currentPage = pages.length - 1;
-    updateCarousel();
-};
 
-const moveToPage = (index) => {
-    currentPage = index;
-    updateCarousel();
-};
-
-// Inicializar al cargar
-updateCarousel();
 
