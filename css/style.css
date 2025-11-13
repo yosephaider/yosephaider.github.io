@@ -147,8 +147,8 @@ h2 {
 }
 
 .menu-left a {
-  font-size: 2.4em;
-  color: #b5b5b5;
+  font-size: 2.2em;
+  color: #c6c6c6;
   position: relative;
   display: block;
   line-height: 1.52em;
@@ -159,11 +159,11 @@ h2 {
   -o-transition: opacity 0.25s ease-in-out;
   -ms-transition: opacity 0.25s ease-in-out;
   transition: opacity 0.25s ease-in-out;
-  background-color: #373440 !important;
-  border-radius: 12px;
-  margin: 9px 10px;
-  width: 68px;
-  left: 9.5px
+  background-color: #251f35 !important;
+  border-radius: 14px;
+  margin: 11px 10px;
+  width: 64px;
+  left: 10.5px
 }
 
 .menu-left a:before {
