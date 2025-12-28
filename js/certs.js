@@ -288,6 +288,28 @@ const certificatePDFs = {
     'PostgreSQL Maintenance': 'https://drive.google.com/file/d/1wxmhEwMnnm5DHoN9-2DnE8OIicwf7oQv/view?usp=sharing',
     'PostgreSQL Performance Tuning and Optimization': 'https://drive.google.com/file/d/1Dzl2yvpnmAMgMMuVDCKas_RU1vv5YJup/view?usp=sharing',
     'PostgreSQL Replication': 'https://drive.google.com/file/d/1oz2uEfUWpOmaLN_S6tZ2MWWbPcsKKlV6/view?usp=sharing',
+    'Amazon Connect Agent Performance Evaluations': 'https://drive.google.com/file/d/167gOyjSOQFo0JckRxaAmK45vYc-1bO58/view?usp=sharing',
+    'Amazon Connect Analytics Reporting and Visualizations': 'https://drive.google.com/file/d/1hBT5wtgb9vlmPLNvTFtHORgJk2F0E2EM/view?usp=sharing',
+    'Amazon Connect Conversational Analytics Essentials': 'https://drive.google.com/file/d/1zKSqX11kRotT7JibfcM35bowTkwtFqQG/view?usp=sharing',
+    'Amazon Connect Reporting & Analytics - Assessment': 'https://drive.google.com/file/d/123suLpoGzfE0Fylu5Y5lxF6xkMyTmoRX/view?usp=sharing',
+    'Amazon Connect Reporting & Analytics - Knowledge Badge Readiness Path': 'https://drive.google.com/file/d/1yMyU8aOuG5MnL8Epam9Z-Da4pa94XV0Q/view?usp=sharing',
+    'Amazon Connect Rules and Notification Management': 'https://drive.google.com/file/d/13yZW5EHuMyFZ_00cj2GyvnfRaN_ClpaT/view?usp=sharing',
+    'AWS Graviton - Knowledge Badge Readiness Path': 'https://drive.google.com/file/d/1utkRrhbcDole2YGhkARbqA54BA29pSvH/view?usp=sharing',
+    'AWS Graviton: Performance and Migration Best Practices': 'https://drive.google.com/file/d/16WAV0ZNv7HzaOfb8lDckH9dbf9xUY6Nf/view?usp=sharing',
+    'Contact Lens Advanced Analytics & Optimization': 'https://drive.google.com/file/d/1a0SUtT4jJ1BWGx61U4qgsWNns38szQ3h/view?usp=sharing',
+    'End User Computing on AWS – Advanced Topics': 'https://drive.google.com/file/d/1Ex-yoh5ArznOS1y3PMotQgl6Yfz2C5lv/view?usp=sharing',
+    'End User Computing on AWS - Introductory Course': 'https://drive.google.com/file/d/1_fC7PZeDhS_uiABWWvzFOPrIn5Ynmudu/view?usp=sharing',
+    'End User Computing on AWS - Service Architecture': 'https://drive.google.com/file/d/1PJEGSkHQ3ScOt7T4SFrr6HCCgsTMKf7H/view?usp=sharing',
+    'Media & Entertainment: Direct to Consumer and Broadcast Foundations - Knowledge Badge Readiness Path': 'https://drive.google.com/file/d/1zp2tjccufwj5c2UPI9FyuHHzcAjFb5sd/view?usp=sharing',
+    'Media & Entertainment: Direct-to-Consumer and Broadcast Foundations Knowledge Badge Assessment': 'https://drive.google.com/file/d/1-61iFhP1MJCCdAx1ko-uWK8gB8DvPZS4/view?usp=sharing',
+    'Amazon Connect Communications Specialist Assessment': 'https://drive.google.com/file/d/1y9iW0f8wHaSoSvPXiWijkw1kPrpLFgvH/view?usp=sharing',
+    'AWS End User Computing - Knowledge Badge Readiness Path': 'https://drive.google.com/file/d/1qblk_ZWHfJJ_W1f22pKXc9LbKSSeaJqa/view?usp=sharing',
+    'AWS for Games: Cloud Game Development - Knowledge Badge Readiness Path': 'https://drive.google.com/file/d/1KgW8_2VNJTSYgMjz1tlZXXQh3cjSZXrw/view?usp=sharing',
+    'Cloud Game Development Knowledge Badge Assessment': 'https://drive.google.com/file/d/10G2cCE2r-F2Q-zGXvYGi3DCUZggT4Vr3/view?usp=sharing',
+    'End User Computing on AWS Knowledge Badge Assessment': 'https://drive.google.com/file/d/1CZ6QzS6VL-pku0Z8VZziplEiqwC-q1Jh/view?usp=sharing',
+    'AWS Agentic AI Demonstrated': 'https://drive.google.com/file/d/1KB0mRhc7NJ4cHQxx9iQoJ-sLrVleL-Fn/view?usp=sharing',
+    'Advanced PostgreSQL for Amazon Aurora and Amazon RDS Assessment': 'https://drive.google.com/file/d/1XCriKSTNnqg8V-vIMUjg65ILou0rwowH/view?usp=sharing',
+    'PostgreSQL for Amazon Aurora and Amazon RDS - Advanced Concepts Knowledge Badge Readiness Path': 'https://drive.google.com/file/d/1rxel7o8qUujNw238OP_GYq3trBIKIpC3/view?usp=sharing',
     // AWS Educate
     'AWS Emerging Talent Community Digital Badge': 'https://drive.google.com/file/d/1VfedhXauOo5Ayyv04Okjiu-88eYQ5VWK/view?usp=sharing',
     // Datadog
@@ -317,6 +339,9 @@ const certificatePDFs = {
     'Discovering Table, List, SLO, and Architecture Widgets': 'https://drive.google.com/file/d/1OcZPLRItsMtXjlXwY9RYtgqh2BARO1Qb/view?usp=sharing',
     'Getting Started with Log Explorer': 'https://drive.google.com/file/d/1Dp3X52J1oTQFpoOx8WzogS8bYxl2y8Gq/view?usp=sharing',
     'Introduction to Dashboards': 'https://drive.google.com/file/d/1VUCvEpQTnmEKJtJMu1w8hRcAFG7Bo7sv/view?usp=sharing',
+    'APM Monitors and Alerting': 'https://drive.google.com/file/d/1156NdJyLlvu8TdF2M9iJTTL9ecsvIsSh/view?usp=sharing',
+    'APM Rate Limiting and Retention': 'https://drive.google.com/file/d/1Gp_T3x5si4a5PLD6vU1VYpAslrWhfKtW/view?usp=sharing',
+    'Create Custom Spans and Span Tags with APM': 'https://drive.google.com/file/d/17dBJdoMg2GQ0nL9iw6cXrCaE2I2q3Ieo/view?usp=sharing',
     // Programming and Development
     'Python Programming Course': 'https://drive.google.com/file/d/1iOYorgZhAb2gKKrdrOwmoPZ-G20-fJm5/view?usp=sharing',
     'Introduction to PHP': 'https://drive.google.com/file/d/15rmGabCvxXyewU4jv7FDN5Wb8Cfajq8I/view?usp=sharing',
@@ -341,7 +366,9 @@ const certificatePDFs = {
     'AWS Skills Centers: Becoming a Cloud Practitioner - Part 4 - Advanced Cloud Services': 'https://drive.google.com/file/d/1PtBvECp3805LLQPp9kTfyO_E-duu5BY4/view?usp=sharing',
     'Introduction to DevOps and Site Reliability Engineering (LFS162)': 'https://drive.google.com/file/d/1B6ePF833wjpQR1piN3pnO6YUC9gbyUkY/view?usp=sharing',
     'Introduction to Jenkins (LFS167)': 'https://drive.google.com/file/d/1r__P9OKIu-jSN5q_SQafWQB9QZQuJlvI/view?usp=sharing',
-    'Microsoft Cybersecurity Architect': 'https://drive.google.com/file/d/137FNZLVLGV9qTM9ZCuFlGKPr75zvil3b/view?usp=sharing',    
+    'Microsoft Cybersecurity Architect': 'https://drive.google.com/file/d/137FNZLVLGV9qTM9ZCuFlGKPr75zvil3b/view?usp=sharing',
+    'Microsoft Azure Administrator': 'https://drive.google.com/file/d/1aSocsJctlNX9uGZ0kMP6Sn4HfWCBJom_/view?usp=sharing',
+    'AWS Certified AI Practitioner (AIF-C01)': 'https://drive.google.com/file/d/1lp-zluAFIQI4xZg4kBD_xuCr2mzbsmBj/view?usp=sharing',
     // Data Analysis and Statistics
     'Introduction to R Course': 'https://drive.google.com/file/d/1xzaDcNZYgERPW8fngKaPr-0ktpbpyaUW/view?usp=sharing',
     'Intermediate R Course': 'https://drive.google.com/file/d/1jSRplNzpii1XcNQEGGWSw3cewiI20w4f/view?usp=sharing',
@@ -418,7 +445,7 @@ function filterCerts(category) {
     const buttons = document.querySelectorAll('.filter-btn');
     buttons.forEach(btn => {
         btn.classList.remove('active');
-        if (btn.textContent.toLowerCase() === category || 
+        if (btn.textContent.toLowerCase() === category ||
             (btn.textContent === 'All' && category === 'all')) {
             btn.classList.add('active');
         }
@@ -479,7 +506,7 @@ function searchCerts(searchTerm) {
     rows.forEach(row => {
         const name = row.querySelector('.cert-name').textContent.toLowerCase();
         const org = row.querySelector('.cert-org').textContent.toLowerCase();
-        
+
         if (name.includes(term) || org.includes(term)) {
             row.classList.remove('search-hidden');
             if (!row.classList.contains('hidden')) {
@@ -513,15 +540,15 @@ function viewCertificate(name, org, date) {
     const modal = document.getElementById('certModal');
     const pdfContainer = document.getElementById('pdfContainer');
     const pdfDownloadLink = document.getElementById('pdfDownloadLink');
-    
+
     // Update modal text content
     document.getElementById('modalCourse').textContent = name;
     document.getElementById('modalOrg').textContent = org;
     document.getElementById('modalDate').textContent = date;
-    
+
     // Get PDF link for this certificate
     const pdfLink = certificatePDFs[name];
-    
+
     if (pdfLink) {
         // Convert to embed link and set iframe source
         const embedLink = getEmbedLink(pdfLink);
@@ -530,12 +557,12 @@ function viewCertificate(name, org, date) {
         pdfDownloadLink.style.display = 'inline';
     } else {
         // No PDF available - show placeholder message
-        pdfContainer.innerHTML = 
+        pdfContainer.innerHTML =
             '<div style="display: flex; align-items: center; justify-content: center; height: 100%; color: #718096;">' +
             '<p>Certificate PDF will be available soon.</p></div>';
         pdfDownloadLink.style.display = 'none';
     }
-    
+
     modal.style.display = 'block';
 }
 
@@ -640,7 +667,3 @@ initCarousel({
     rightArrowSelector: '.carousel-arrow-right-datadog',
     itemsPerPage: 8
 });
-
-
-
-
