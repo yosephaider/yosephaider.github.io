@@ -1,0 +1,29 @@
+name: Update last modified date
+
+on:
+  push:
+    branches: [master]
+
+jobs:
+  update-date:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Inyectar fecha del último commit
+        run: |
+          FECHA=$(LC_TIME=C git log -1 --format="%cd" --date=format:"%B %d, %Y &#8213; %H:%M:%S")
+          FECHA=$(echo "$FECHA" | sed 's/&/\\\&/g')
+          sed -i "s/{{LAST_UPDATE}}/$FECHA/g" index.html
+          sed -i "s/{{LAST_UPDATE}}/$FECHA/g" certifications/index.html
+
+      - name: Commit y push
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add index.html certifications/index.html
+          git diff --staged --quiet || git commit -m "chore: update last modified date [skip ci]"
+          git push
+
