@@ -11,7 +11,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  user-select: none;
   background-color: #fff;
 }
 
@@ -40,21 +39,15 @@ h2 {
   display: none;
   text-align: center;
   height: 8em;
-  background-color: #1b1e2d;
   padding-top: 2em;
   border-radius: 30px 30px 0 0;
+  border-bottom: 1px dotted #adadad;
 }
 
 #nav a {
   font-size: 2.5em;
   margin: 0 0.25em 0 0.25em;
-  opacity: 0.35;
   outline: 0;
-  -moz-transition: opacity 0.25s ease-in-out;
-  -webkit-transition: opacity 0.25s ease-in-out;
-  -o-transition: opacity 0.25s ease-in-out;
-  -ms-transition: opacity 0.25s ease-in-out;
-  transition: opacity 0.25s ease-in-out;
 }
 
 #nav a:before {
@@ -92,7 +85,8 @@ h2 {
   position: relative;
   display: block;
   height: 90%;
-  border-radius: 12px;
+  border-radius: 50%;
+  margin-top: -20px;
 }
 
 #home header {
@@ -106,36 +100,44 @@ h2 {
 
 #home header > h1 {
   position: absolute;
-  left: 10px;
-  bottom: 50.5%;
-  margin: 0;
+  left: 12px;
+  margin-top: 45px;
   font-weight: bolder;
-  text-shadow: #15132d 1px 1px 0;
 }
 
 #home header > p {
   position: absolute;
-  left: 12px;
-  top: 50%;
+  left: 14px;
   font-size: 1em;
   letter-spacing: -0.015em;
-  margin-top: 0;
-  text-shadow: #15132d 1px 1px 0;
+  margin-top: 84px;
 }
 
 #home header > span {
   position: absolute;
   left: 14px;
-  top: 57%;
   font-size: 0.75em;
   line-height: 1.6em;
-  margin-top: 0;
+  margin-top: 111px;
   font-weight: 400;
-  text-shadow: #15132d 1px 1px 0;
+}
+
+#home header .about {
+  margin-top: 0.3em;
+}
+
+#home header .about p {
+  position: absolute;
+  font-size: 0.72em;
+  line-height: 1.5em;
+  margin-top: 145px;
+  color: #555;
+  font-weight: 300;
+  max-width: 22em;
+  left: 14px;
 }
 
 #home .menu-left {
-  background-color: #8a8891;
   width: 12.5%;
   text-align: center;
   height: 100%;
@@ -143,15 +145,15 @@ h2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 3px 0;
+  border-right: 1px solid #dadada;
 }
 
 .menu-left a {
-  font-size: 2.2em;
-  color: #c6c6c6;
+  font-size: 2.4em;
+  color: #323232;
   position: relative;
   display: block;
-  line-height: 1.52em;
+  line-height: 1.3em;
   outline: 0;
   opacity: 1;
   -moz-transition: opacity 0.25s ease-in-out;
@@ -159,11 +161,10 @@ h2 {
   -o-transition: opacity 0.25s ease-in-out;
   -ms-transition: opacity 0.25s ease-in-out;
   transition: opacity 0.25s ease-in-out;
-  background-color: #251f35 !important;
   border-radius: 14px;
   margin: 11px 10px;
   width: 64px;
-  left: 10.5px
+  left: 0.5px
 }
 
 .menu-left a:before {
@@ -180,7 +181,7 @@ textarea,
 select {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
-  color: #fff;
+  color: #000;
 }
 
 h1,
@@ -190,7 +191,7 @@ h4,
 h5,
 h6 {
   font-weight: 400;
-  color: #fff;
+  color: #000;
 }
 
 article {
@@ -234,8 +235,6 @@ article:last-child {
 
 .panel {
   position: relative;
-  background: #171731 !important;
-  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.04), 0 0 0 1px rgba(110, 118, 129, 0.2), 0 2px 10px rgba(95, 92, 111, 0.6)
 }
 
 .panel:before,
@@ -281,33 +280,43 @@ article:last-child {
     padding-bottom: 2em;
     text-align: center;
     border-radius: 0 0 30px 30px;
-    background: #171731 !important;
-    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, .38), 0 7px 10px -5px rgba(233, 30, 99, .4);
   }
 
   #nav a {
     width: 1.3em;
     font-size: 5.8em;
-    opacity: 0.55;
-    color: #fff;
+    color: #545151;
   }
 
   #movil header > h1 {
     font-size: 3.6em;
     color: #7d7e80;
-    color: #fff;
+    color: #000;
   }
 
   #movil header > p {
     font-size: 2.5em;
-    margin-top: -0.6em;
+    margin-top: -0.8em;
     margin-bottom: 0.4em;
-    color: #fff;
+    color: #000;
   }
 
   #movil header > span {
     font-size: 1.8em;
-    color: #fff;
+    color: #000;
+  }
+  
+  #movil header .about {
+    margin: 3.2em 3.5em;
+    text-align: center;
+  }
+  
+  #movil header .about p {
+    font-size: 1.8em;
+    line-height: 1.5em;
+    margin: 0;
+    color: #616161;
+    font-weight: 300;
   }
 
   #movil .pic img {
