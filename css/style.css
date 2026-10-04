@@ -253,6 +253,48 @@ article:last-child {
   transform: scale(1.1);
 }
 
+.site-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 12px 24px;
+  font-size: 0.8rem;
+  color: #777;
+  background: #fff;
+  text-align: center;
+}
+
+.site-footer summary {
+  cursor: pointer;
+  list-style: none;
+  display: inline-block;
+}
+
+.site-footer summary::-webkit-details-marker { display: none; }
+
+.site-footer summary::before {
+  content: "\27A4  ";
+  color: #999;
+}
+
+.site-footer details[open] summary::before {
+  content: "\2B9F  ";
+  color: #999;
+}
+
+.site-footer .legal {
+  max-width: 800px;
+  margin: 12px auto 0;
+  text-align: left;
+  line-height: 1.5;
+}
+
+.site-footer a {
+  color: inherit;
+  text-decoration: underline;
+}
+
 #movil {
   display: none;
 }
