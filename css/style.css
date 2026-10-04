@@ -40,7 +40,6 @@ h2 {
   text-align: center;
   height: 8em;
   padding-top: 2em;
-  border-radius: 30px 30px 0 0;
   border-bottom: 1px dotted #adadad;
 }
 
@@ -72,9 +71,9 @@ h2 {
 
 #home .pic {
   position: absolute;
-  right: 20px;
+  right: 4px;
   top: 0;
-  height: 100%;
+  height: 92%;
   text-decoration: none;
   display: flex;
   flex-direction: column;
@@ -84,41 +83,40 @@ h2 {
 #home .pic img {
   position: relative;
   display: block;
-  height: 90%;
+  height: 96%;
   border-radius: 50%;
-  margin-top: -20px;
+  margin-top: 2px;
 }
 
 #home header {
   position: absolute;
   left: 0;
   top: 0;
-  width: 100%;
+  width: 45%;
   height: 100%;
   margin-left: 7em;
 }
 
 #home header > h1 {
   position: absolute;
-  left: 12px;
-  margin-top: 45px;
+  left: 14px;
+  margin-top: 52px;
   font-weight: bolder;
 }
 
 #home header > p {
   position: absolute;
-  left: 14px;
-  font-size: 1em;
-  letter-spacing: -0.015em;
-  margin-top: 84px;
+  left: 18px;
+  font-size: .95em;
+  margin-top: 92px;
 }
 
 #home header > span {
   position: absolute;
-  left: 14px;
+  left: 18px;
   font-size: 0.75em;
   line-height: 1.6em;
-  margin-top: 111px;
+  margin-top: 118px;
   font-weight: 400;
 }
 
@@ -130,18 +128,17 @@ h2 {
   position: absolute;
   font-size: 0.72em;
   line-height: 1.5em;
-  margin-top: 145px;
+  margin-top: 150px;
   color: #555;
   font-weight: 300;
-  max-width: 22em;
-  left: 14px;
+  max-width: 26em;
+  left: 18px;
 }
 
 #home .menu-left {
   width: 12.5%;
   text-align: center;
   height: 100%;
-  border-radius: 12px 0 0 12px;
   display: flex;
   flex-direction: column;
   justify-content: center;

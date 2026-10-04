@@ -696,3 +696,4 @@ initCarousel({
     rightArrowSelector: '.carousel-arrow-right-datadog',
     itemsPerPage: 8
 });
+
