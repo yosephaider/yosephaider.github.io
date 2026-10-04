@@ -273,16 +273,6 @@ article:last-child {
 
 .site-footer summary::-webkit-details-marker { display: none; }
 
-.site-footer summary::before {
-  content: "\27A4  ";
-  color: #999;
-}
-
-.site-footer details[open] summary::before {
-  content: "\2B9F  ";
-  color: #999;
-}
-
 .site-footer .legal {
   max-width: 800px;
   margin: 12px auto 0;
