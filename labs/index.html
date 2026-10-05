@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <script src="labs-data.js"></script>
+  <title>Laboratorios | Yosephaider Vanegas</title>
+  <style>
+    body { font-family: Roboto, system-ui, sans-serif; max-width: 1000px; margin: 0 auto; padding: 2rem 1rem; color: #111; }
+    a.back { text-decoration: none; color: #555; }
+    .filters { display: flex; flex-wrap: wrap; gap: .5rem; margin: 1.5rem 0; }
+    .filters button { border: 1px solid #ccc; background: #fff; padding: .4rem .9rem; border-radius: 999px; cursor: pointer; }
+    .filters button.active { background: #111; color: #fff; border-color: #111; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.25rem; }
+    .card { border: 1px solid #e3e3e3; border-radius: 10px; overflow: hidden; }
+    .card img { width: 100%; display: block; }
+    .card .body { padding: .9rem; }
+    .card h3 { margin: 0 0 .4rem; font-size: 1.05rem; }
+    .card p { margin: 0 0 .6rem; color: #555; font-size: .9rem; }
+    .tags span { font-size: .75rem; background: #f0f0f0; padding: .15rem .5rem; border-radius: 4px; margin-right: .3rem; }
+    .links { margin-top: .6rem; font-size: .9rem; }
+  </style>
+</head>
+<body>
+  <a class="back" href="/">← Volver</a>
+  <h1>Laboratorios y conocimiento</h1>
+  <p>Prácticas propias de DevOps, Cloud y SRE, hechas en mi entorno local.</p>
+
+  <div class="filters" id="filters"></div>
+  <div class="grid" id="grid"></div>
+
+  <script>
+    let labs = LABS, current = "Todos";
+
+    renderFilters();
+    renderGrid();
+
+    function renderFilters() {
+      const cats = ["Todos", ...new Set(labs.map(l => l.category))];
+      const el = document.getElementById("filters");
+      el.innerHTML = "";
+      cats.forEach(c => {
+        const b = document.createElement("button");
+        b.textContent = c;
+        if (c === current) b.classList.add("active");
+        b.onclick = () => { current = c; renderFilters(); renderGrid(); };
+        el.appendChild(b);
+      });
+    }
+
+    function renderGrid() {
+      const grid = document.getElementById("grid");
+      const items = labs.filter(l => current === "Todos" || l.category === current);
+      grid.innerHTML = items.map(l => `
+        <article class="card">
+          <a href="https://www.youtube.com/watch?v=${l.youtube}" target="_blank" rel="noopener">
+            <img loading="lazy" src="https://img.youtube.com/vi/${l.youtube}/hqdefault.jpg" alt="${l.title}">
+          </a>
+          <div class="body">
+            <h3>${l.title}</h3>
+            <p>${l.description}</p>
+            <div class="tags">${(l.tags || []).map(t => `<span>${t}</span>`).join("")}</div>
+            <div class="links">
+              ${l.repo ? `<a href="${l.repo}" target="_blank" rel="noopener">Ver código</a>` : ""}
+            </div>
+          </div>
+        </article>`).join("");
+    }
+  </script>
+</body>
+</html>

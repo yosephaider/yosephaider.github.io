@@ -33,7 +33,7 @@ jobs:
       - name: Preparar carpeta a publicar
         run: |
           mkdir _site
-          cp -r index.html CNAME certifications css img js _site/
+          cp -r index.html CNAME robots.txt certifications css img js _site/
 
       - uses: actions/configure-pages@v5
 
