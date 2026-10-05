@@ -19,15 +19,36 @@ params = urllib.parse.urlencode({
 with urllib.request.urlopen(f"https://www.googleapis.com/youtube/v3/videos?{params}") as r:
     data = json.load(r)
 
+items = data.get("items", [])
+channel_ids = sorted({item["snippet"]["channelId"] for item in items})
+
+channels = {}
+if channel_ids:
+    ch_params = urllib.parse.urlencode({
+        "part": "snippet",
+        "id": ",".join(channel_ids),
+        "key": KEY,
+    })
+    with urllib.request.urlopen(f"https://www.googleapis.com/youtube/v3/channels?{ch_params}") as r:
+        ch_data = json.load(r)
+    for ch in ch_data.get("items", []):
+        sn = ch["snippet"]
+        channels[ch["id"]] = {
+            "name": sn["title"],
+            "avatar": sn["thumbnails"]["default"]["url"],
+        }
+
 stats = {}
-for item in data.get("items", []):
+for item in items:
     s = item.get("statistics", {})
     stats[item["id"]] = {
         "title": item["snippet"]["title"],
+        "description": item["snippet"].get("description", ""),
         "published": item["snippet"]["publishedAt"],
         "views": s.get("viewCount"),
         "likes": s.get("likeCount"),
         "comments": s.get("commentCount"),
+        "channel": channels.get(item["snippet"]["channelId"]),
     }
 
 with open("labs/labs-stats.json", "w", encoding="utf-8") as f:
