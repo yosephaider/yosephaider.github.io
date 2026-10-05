@@ -1,7 +1,3 @@
-html {
-  min-width: 100%;
-}
-
 body {
   width: 100vw;
   height: 100vh;
@@ -14,21 +10,17 @@ body {
   background-color: #fff;
 }
 
-body,
-input,
-textarea,
-select {
+body {
   font-size: 14pt;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: #000;
 }
 
 h1 {
   font-size: 1.8em;
   letter-spacing: -0.015em;
-}
-
-h2 {
-  font-size: 1.8em;
-  letter-spacing: -0.015em;
+  font-weight: 400;
 }
 
 #wrapper {
@@ -58,14 +50,11 @@ h2 {
 }
 
 .panel {
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: relative;
   width: 45em;
 }
 
 #home {
-  padding: 0;
   height: 19em;
 }
 
@@ -74,7 +63,6 @@ h2 {
   right: 4px;
   top: 0;
   height: 92%;
-  text-decoration: none;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -100,15 +88,14 @@ h2 {
 #home header > h1 {
   position: absolute;
   left: 14px;
-  margin-top: 52px;
-  font-weight: bolder;
+  margin-top: 54px;
 }
 
 #home header > p {
   position: absolute;
   left: 18px;
   font-size: .95em;
-  margin-top: 92px;
+  margin-top: 94px;
 }
 
 #home header > span {
@@ -116,7 +103,7 @@ h2 {
   left: 18px;
   font-size: 0.75em;
   line-height: 1.6em;
-  margin-top: 118px;
+  margin-top: 120px;
   font-weight: 400;
 }
 
@@ -130,7 +117,6 @@ h2 {
   line-height: 1.5em;
   margin-top: 150px;
   color: #555;
-  font-weight: 300;
   max-width: 26em;
   left: 18px;
 }
@@ -146,11 +132,15 @@ h2 {
 }
 
 .menu-left a {
-  font-size: 2.4em;
-  color: #323232;
+  font-size: 2.5em;
+  color: #424242;
   position: relative;
-  display: block;
-  line-height: 1.3em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1;
+  line-height: 1;
+  margin: 12px auto;
   outline: 0;
   opacity: 1;
   -moz-transition: opacity 0.25s ease-in-out;
@@ -158,10 +148,6 @@ h2 {
   -o-transition: opacity 0.25s ease-in-out;
   -ms-transition: opacity 0.25s ease-in-out;
   transition: opacity 0.25s ease-in-out;
-  border-radius: 14px;
-  margin: 11px 10px;
-  width: 64px;
-  left: 0.5px
 }
 
 .menu-left a:before {
@@ -170,33 +156,13 @@ h2 {
 
 .menu-left a:hover {
   opacity: 1;
-}
-
-body,
-input,
-textarea,
-select {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-  color: #000;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 400;
-  color: #000;
+  color: #111;
 }
 
 article {
-  border-radius: 12px;
   margin-bottom: 3em;
 }
 
-section:last-child,
 article:last-child {
   margin-bottom: 0;
 }
@@ -213,10 +179,6 @@ article:last-child {
   text-transform: none !important;
 }
 
-.icon > .label {
-  display: none;
-}
-
 #nav a {
   position: relative;
   display: inline-block;
@@ -224,14 +186,7 @@ article:last-child {
   width: 1em;
   height: 1em;
   line-height: 1em;
-  -webkit-transition: -webkit-transform 0.3s;
-  -moz-transition: -moz-transform 0.3s;
-  -ms-transition: -ms-transform 0.3s;
   transition: 0.3s transform;
-}
-
-.panel {
-  position: relative;
 }
 
 .panel:before,
@@ -247,10 +202,7 @@ article:last-child {
 }
 
 .icon:hover {
-  -moz-transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
 .site-footer {
@@ -304,11 +256,9 @@ article:last-child {
 
   #movil {
     display: block;
-    margin-top: 0;
     padding-top: 0.2em;
     padding-bottom: 2em;
     text-align: center;
-    border-radius: 0 0 30px 30px;
   }
 
   #nav a {
@@ -319,20 +269,16 @@ article:last-child {
 
   #movil header > h1 {
     font-size: 3.6em;
-    color: #7d7e80;
-    color: #000;
   }
 
   #movil header > p {
     font-size: 2.5em;
     margin-top: -0.8em;
     margin-bottom: 0.4em;
-    color: #000;
   }
 
   #movil header > span {
     font-size: 1.8em;
-    color: #000;
   }
   
   #movil header .about {
@@ -345,7 +291,6 @@ article:last-child {
     line-height: 1.5em;
     margin: 0;
     color: #616161;
-    font-weight: 300;
   }
 
   #movil .pic img {
